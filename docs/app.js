@@ -22,7 +22,9 @@ const EMBEDDED_DATA = {
           "name": "功必有因錦標",
           "postTimeHkt": "13:00",
           "note": "賽果（已完）",
-          "top3": [
+          "resulted": true,
+          "top3": [],
+          "result": [
             {
               "rank": 1,
               "number": 3,
@@ -50,7 +52,32 @@ const EMBEDDED_DATA = {
           "no": "S1-7",
           "name": "木下錦標",
           "postTimeHkt": "13:35",
+          "note": "賽果（已完）",
+          "resulted": true,
           "top3": [
+            {
+              "rank": 1,
+              "number": 5,
+              "nameZh": "星辰征駕",
+              "nameEn": "Cosmic Crusader",
+              "winOdds": 2.8
+            },
+            {
+              "rank": 2,
+              "number": 1,
+              "nameZh": "力先生",
+              "nameEn": "Lindermann",
+              "winOdds": 3.5
+            },
+            {
+              "rank": 3,
+              "number": 6,
+              "nameZh": "天鳥俠義",
+              "nameEn": "Birdman",
+              "winOdds": 5.5
+            }
+          ],
+          "result": [
             {
               "rank": 1,
               "number": 6,
@@ -72,14 +99,37 @@ const EMBEDDED_DATA = {
               "nameEn": "Attrition",
               "winOdds": 101
             }
-          ],
-          "note": "賽果（已完）"
+          ]
         },
         {
           "no": "S1-8",
           "name": "自然派錦標",
           "postTimeHkt": "14:15",
+          "note": "賽果（已完）",
+          "resulted": true,
           "top3": [
+            {
+              "rank": 1,
+              "number": 14,
+              "nameZh": "Zahrann",
+              "nameEn": "Zahrann",
+              "winOdds": 4.5
+            },
+            {
+              "rank": 2,
+              "number": 3,
+              "nameZh": "Saint George",
+              "nameEn": "Saint George",
+              "winOdds": 6
+            },
+            {
+              "rank": 3,
+              "nameZh": "Campaldino",
+              "nameEn": "Campaldino",
+              "winOdds": 14
+            }
+          ],
+          "result": [
             {
               "rank": 1,
               "number": 14,
@@ -101,14 +151,35 @@ const EMBEDDED_DATA = {
               "nameEn": "Asterix",
               "winOdds": 26
             }
-          ],
-          "note": "賽果（已完）"
+          ]
         },
         {
           "no": "S1-9",
           "name": "羅柏奇勒爵士錦標",
           "postTimeHkt": "14:50",
+          "note": "賽果（已完）",
+          "resulted": true,
           "top3": [
+            {
+              "rank": 1,
+              "nameZh": "星彩女兒",
+              "nameEn": "Lady Shenandoah",
+              "winOdds": 5
+            },
+            {
+              "rank": 2,
+              "nameZh": "天使資金",
+              "nameEn": "Angel Capital",
+              "winOdds": 7
+            },
+            {
+              "rank": 3,
+              "nameZh": "花之萼",
+              "nameEn": "Sepals",
+              "winOdds": 11
+            }
+          ],
+          "result": [
             {
               "rank": 1,
               "number": 5,
@@ -130,15 +201,16 @@ const EMBEDDED_DATA = {
               "nameEn": "Regal Award",
               "winOdds": 7
             }
-          ],
-          "note": "賽果（已完）"
+          ]
         },
         {
           "no": "S1-10",
           "name": "指標評分84讓賽",
           "postTimeHkt": "15:25",
           "note": "賽果（已完）",
-          "top3": [
+          "resulted": true,
+          "top3": [],
+          "result": [
             {
               "rank": 1,
               "number": 9,
@@ -222,7 +294,7 @@ const EMBEDDED_DATA = {
       "type": "local"
     }
   ],
-  "updatedAt": "2026-09-19 17:05"
+  "updatedAt": "2026-09-19 19:00"
 };
 
 const state = {
@@ -506,10 +578,20 @@ function bindCalendarEvents(root) {
 }
 
 
-/** Race has official/resulted top3 — prefer note「賽果」 */
+/** Official finishing places for a race (never overwrite tip top3). */
+function getRaceResult(race) {
+  if (!race) return [];
+  if (Array.isArray(race.result) && race.result.length) {
+    return [...race.result].sort((a, b) => (a.rank || 0) - (b.rank || 0));
+  }
+  return [];
+}
+
+/** Race has official results — result[], resulted, or note「賽果」 */
 function isResultedRace(race) {
   if (!race) return false;
   if (race.resulted === true) return true;
+  if (Array.isArray(race.result) && race.result.length) return true;
   const note = race.note != null ? String(race.note) : "";
   if (note.includes("賽果")) return true;
   const st = race.status != null ? String(race.status) : "";
@@ -557,11 +639,9 @@ function renderResultPlace(h) {
 }
 
 function renderResultRow(race) {
-  const top3 = Array.isArray(race.top3)
-    ? [...race.top3].sort((a, b) => (a.rank || 0) - (b.rank || 0))
-    : [];
-  const places = top3.length
-    ? `<ul class="result-places">${top3.map(renderResultPlace).join("")}</ul>`
+  const placesArr = getRaceResult(race);
+  const places = placesArr.length
+    ? `<ul class="result-places">${placesArr.map(renderResultPlace).join("")}</ul>`
     : `<div class="results-empty" style="padding:0.35rem 0;letter-spacing:0.06em;font-size:0.8rem">—</div>`;
 
   return `
@@ -701,8 +781,22 @@ function renderRaces() {
   racesView.innerHTML = `<div class="race-list">${races.map(renderRaceBlock).join("")}</div>`;
 }
 
+function saddleKey(h) {
+  if (!h || h.number == null || h.number === "") return null;
+  return String(h.number);
+}
+
 function renderRaceBlock(race) {
-  const top3 = Array.isArray(race.top3) ? [...race.top3].sort((a, b) => a.rank - b.rank) : [];
+  const top3 = Array.isArray(race.top3)
+    ? [...race.top3].sort((a, b) => (a.rank || 0) - (b.rank || 0))
+    : [];
+  const result = getRaceResult(race);
+  const hasResult = result.length > 0 || isResultedRace(race);
+
+  const tipNums = new Set(top3.map(saddleKey).filter(Boolean));
+  const resultNums = new Set(result.map(saddleKey).filter(Boolean));
+  const matchedNums = new Set([...tipNums].filter((n) => resultNums.has(n)));
+
   const note = race.note
     ? `<span class="race-note">${escapeHtml(race.note)}</span>`
     : "";
@@ -710,20 +804,34 @@ function renderRaceBlock(race) {
     ? `<span class="race-post" title="開跑時間（香港時間）">${escapeHtml(race.postTimeHkt)}</span>`
     : "";
 
-  let body;
+  let tipBody;
   if (!top3.length) {
-    body = `<div class="empty-tip">待更新</div>`;
+    tipBody = `<div class="empty-tip">待更新</div>`;
   } else {
-    body = `
-      <div class="section-label">三支最佳預測</div>
+    tipBody = `
       <ul class="top3-list">
-        ${top3.map(renderHorseRow).join("")}
+        ${top3.map((h) => renderHorseRow(h, matchedNums)).join("")}
       </ul>
     `;
   }
 
+  let resultBody;
+  if (!hasResult) {
+    resultBody = `<div class="empty-tip pending-result">待賽果</div>`;
+  } else if (!result.length) {
+    resultBody = `<div class="empty-tip">—</div>`;
+  } else {
+    resultBody = `
+      <ul class="top3-list result-list">
+        ${result.map((h) => renderHorseRow(h, matchedNums, { compact: true })).join("")}
+      </ul>
+    `;
+  }
+
+  const compareClass = hasResult ? "has-result" : "awaiting-result";
+
   return `
-    <article class="race-block">
+    <article class="race-block ${compareClass}">
       <header class="race-header">
         <div class="race-no-name">
           <span class="race-no">${escapeHtml(String(race.no))}</span>
@@ -732,16 +840,28 @@ function renderRaceBlock(race) {
         </div>
         ${note}
       </header>
-      ${body}
+      <div class="race-compare">
+        <div class="compare-col tip-col">
+          <div class="section-label">預測</div>
+          ${tipBody}
+        </div>
+        <div class="compare-col result-col">
+          <div class="section-label">賽果</div>
+          ${resultBody}
+        </div>
+      </div>
     </article>
   `;
 }
 
-function renderHorseRow(h) {
+function renderHorseRow(h, matchedNums, opts) {
   const rank = h.rank || 0;
   const mark = RANK_MARKS[rank] || String(rank);
+  const compact = opts && opts.compact;
+  const sk = saddleKey(h);
+  const matched = sk && matchedNums && matchedNums.has(sk);
   const badge =
-    rank === 1
+    !compact && rank === 1
       ? `<span class="badge-win">獨贏首選</span>`
       : "";
   const en = h.nameEn
@@ -751,12 +871,15 @@ function renderHorseRow(h) {
   const winFmt = formatOdds(h.winOdds);
   const placeFmt = formatOdds(h.placeOdds);
   const winDisplay = winFmt || "—";
-  const placeHtml = placeFmt
+  const placeHtml = !compact && placeFmt
     ? `<span class="odds-place">位置 ${escapeHtml(placeFmt)}</span>`
     : "";
 
+  const matchClass = matched ? " match" : "";
+  const compactClass = compact ? " compact" : "";
+
   return `
-    <li class="horse-row rank-${rank}">
+    <li class="horse-row rank-${rank}${matchClass}${compactClass}">
       <span class="rank-mark r${rank}" aria-label="第${rank}名">${mark}</span>
       <span class="saddle">${escapeHtml(h.number != null && h.number !== "" ? String(h.number) : "—")}</span>
       <div class="horse-names">

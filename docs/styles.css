@@ -382,6 +382,89 @@ body {
   letter-spacing: 0.15em;
 }
 
+/* Tip vs official result side-by-side */
+.race-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-top: 1px solid rgba(197, 221, 240, 0.85);
+}
+
+.compare-col {
+  min-width: 0;
+}
+
+.compare-col.tip-col {
+  border-right: 1px solid rgba(197, 221, 240, 0.85);
+  background: linear-gradient(180deg, rgba(240, 248, 255, 0.55), transparent 40%);
+}
+
+.compare-col.result-col {
+  background: linear-gradient(180deg, rgba(232, 246, 236, 0.45), transparent 40%);
+}
+
+.compare-col .section-label {
+  padding-top: 0.7rem;
+}
+
+.compare-col.result-col .section-label {
+  color: #2f7a4a;
+}
+
+.race-block.awaiting-result .compare-col.result-col {
+  opacity: 0.85;
+}
+
+.empty-tip.pending-result {
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+.horse-row.match {
+  box-shadow: inset 3px 0 0 rgba(74, 159, 216, 0.55);
+  background: rgba(74, 159, 216, 0.08);
+}
+
+.horse-row.compact {
+  padding: 0.55rem 0.4rem;
+  grid-template-columns: 1.75rem 2.1rem 1fr auto;
+  gap: 0.4rem;
+}
+
+.horse-row.compact .horse-zh {
+  font-size: 0.95rem;
+}
+
+.horse-row.compact .horse-en {
+  font-size: 0.7rem;
+}
+
+.horse-row.compact .odds-block {
+  gap: 0.1rem;
+}
+
+.horse-row.compact .odds-label {
+  font-size: 0.6rem;
+}
+
+.horse-row.compact .saddle {
+  width: 1.95rem;
+  height: 1.95rem;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 700px) {
+  .race-compare {
+    grid-template-columns: 1fr;
+  }
+
+  .compare-col.tip-col {
+    border-right: none;
+    border-bottom: 1px solid rgba(197, 221, 240, 0.85);
+  }
+}
+
 .state-msg {
   text-align: center;
   padding: 2.5rem 1rem;
