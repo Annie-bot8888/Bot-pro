@@ -53,26 +53,27 @@ const EMBEDDED_DATA = {
           "top3": [
             {
               "rank": 1,
-              "number": 5,
-              "nameZh": "星辰征駕",
-              "nameEn": "Cosmic Crusader",
-              "winOdds": 2.8
-            },
-            {
-              "rank": 2,
-              "number": 1,
-              "nameZh": "力先生",
-              "nameEn": "Lindermann",
-              "winOdds": 3.5
-            },
-            {
-              "rank": 3,
               "number": 6,
               "nameZh": "天鳥俠義",
               "nameEn": "Birdman",
-              "winOdds": 5.5
+              "winOdds": 6.2
+            },
+            {
+              "rank": 2,
+              "number": 5,
+              "nameZh": "星辰征駕",
+              "nameEn": "Cosmic Crusader",
+              "winOdds": 2.3
+            },
+            {
+              "rank": 3,
+              "number": 3,
+              "nameZh": "耗敵",
+              "nameEn": "Attrition",
+              "winOdds": 101
             }
-          ]
+          ],
+          "note": "賽果（已完）"
         },
         {
           "no": "S1-8",
@@ -81,23 +82,27 @@ const EMBEDDED_DATA = {
           "top3": [
             {
               "rank": 1,
+              "number": 14,
               "nameZh": "Zahrann",
               "nameEn": "Zahrann",
-              "winOdds": 4.5
+              "winOdds": 2.8
             },
             {
               "rank": 2,
+              "number": 3,
               "nameZh": "Saint George",
               "nameEn": "Saint George",
-              "winOdds": 6
+              "winOdds": 3.6
             },
             {
               "rank": 3,
-              "nameZh": "Campaldino",
-              "nameEn": "Campaldino",
-              "winOdds": 14
+              "number": 2,
+              "nameZh": "Asterix",
+              "nameEn": "Asterix",
+              "winOdds": 26
             }
-          ]
+          ],
+          "note": "賽果（已完）"
         },
         {
           "no": "S1-9",
@@ -106,23 +111,27 @@ const EMBEDDED_DATA = {
           "top3": [
             {
               "rank": 1,
-              "nameZh": "星彩女兒",
-              "nameEn": "Lady Shenandoah",
-              "winOdds": 5
+              "number": 5,
+              "nameZh": "天使資金",
+              "nameEn": "Angel Capital",
+              "winOdds": 7.3
             },
             {
               "rank": 2,
-              "nameZh": "天使資金",
-              "nameEn": "Angel Capital",
-              "winOdds": 7
-            },
-            {
-              "rank": 3,
+              "number": 3,
               "nameZh": "花之萼",
               "nameEn": "Sepals",
               "winOdds": 11
+            },
+            {
+              "rank": 3,
+              "number": 13,
+              "nameZh": "Regal Award",
+              "nameEn": "Regal Award",
+              "winOdds": 7
             }
-          ]
+          ],
+          "note": "賽果（已完）"
         },
         {
           "no": "S1-10",
@@ -133,7 +142,8 @@ const EMBEDDED_DATA = {
             {
               "rank": 1,
               "number": 9,
-              "nameZh": "繁花浪"
+              "nameZh": "繁花浪",
+              "winOdds": 12.7
             },
             {
               "rank": 2,
@@ -176,15 +186,43 @@ const EMBEDDED_DATA = {
     }
   ],
   "calendarDays": [
-    { "date": "2026-09-06", "label": "沙田", "type": "local" },
-    { "date": "2026-09-09", "label": "跑馬地", "type": "local" },
-    { "date": "2026-09-13", "label": "沙田", "type": "local" },
-    { "date": "2026-09-16", "label": "跑馬地", "type": "local" },
-    { "date": "2026-09-19", "label": "海外S1", "type": "overseas" },
-    { "date": "2026-09-23", "label": "跑馬地", "type": "local" },
-    { "date": "2026-09-27", "label": "沙田", "type": "local" }
+    {
+      "date": "2026-09-06",
+      "label": "沙田",
+      "type": "local"
+    },
+    {
+      "date": "2026-09-09",
+      "label": "跑馬地",
+      "type": "local"
+    },
+    {
+      "date": "2026-09-13",
+      "label": "沙田",
+      "type": "local"
+    },
+    {
+      "date": "2026-09-16",
+      "label": "跑馬地",
+      "type": "local"
+    },
+    {
+      "date": "2026-09-19",
+      "label": "海外S1",
+      "type": "overseas"
+    },
+    {
+      "date": "2026-09-23",
+      "label": "跑馬地",
+      "type": "local"
+    },
+    {
+      "date": "2026-09-27",
+      "label": "沙田",
+      "type": "local"
+    }
   ],
-  "updatedAt": "2026-09-19 16:55"
+  "updatedAt": "2026-09-19 17:05"
 };
 
 const state = {
