@@ -6,7 +6,7 @@
       "venue": "澳洲考菲爾德 · 羅柏奇勒爵士錦標賽馬日",
       "type": "overseas",
       "bettable": "馬會可投（S1）",
-      "status": "進行中",
+      "status": "已完成",
       "races": [
         {
           "no": "S1-6",
@@ -98,6 +98,28 @@
               "nameEn": "Sepals"
             }
           ]
+        },
+        {
+          "no": "S1-10",
+          "name": "指標評分84讓賽",
+          "note": "賽果（已完）",
+          "top3": [
+            {
+              "rank": 1,
+              "number": 9,
+              "nameZh": "繁花浪"
+            },
+            {
+              "rank": 2,
+              "number": 5,
+              "nameZh": "力勁速"
+            },
+            {
+              "rank": 3,
+              "number": 6,
+              "nameZh": "發佈會"
+            }
+          ]
         }
       ]
     },
@@ -127,5 +149,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-09-19 15:45"
+  "updatedAt": "2026-09-19 16:52"
 }
