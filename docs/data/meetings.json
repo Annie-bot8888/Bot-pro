@@ -11,97 +11,114 @@
         {
           "no": "S1-6",
           "name": "功必有因錦標",
+          "postTimeHkt": "13:00",
+          "note": "賽果（已完）",
           "top3": [
             {
               "rank": 1,
               "number": 3,
               "nameZh": "北極角",
-              "nameEn": "Point Barrow"
+              "nameEn": "Point Barrow",
+              "winOdds": 4.6
             },
             {
               "rank": 2,
               "number": 10,
               "nameZh": "新娘舞曲",
-              "nameEn": "Bridal Waltz"
+              "nameEn": "Bridal Waltz",
+              "winOdds": 2.1
             },
             {
               "rank": 3,
               "number": 2,
               "nameZh": "慈悲之行",
-              "nameEn": "Inkaruna"
+              "nameEn": "Inkaruna",
+              "winOdds": 15
             }
-          ],
-          "note": "賽果（已完）"
+          ]
         },
         {
           "no": "S1-7",
           "name": "木下錦標",
+          "postTimeHkt": "13:35",
           "top3": [
             {
               "rank": 1,
               "number": 5,
               "nameZh": "星辰征駕",
-              "nameEn": "Cosmic Crusader"
+              "nameEn": "Cosmic Crusader",
+              "winOdds": 2.8
             },
             {
               "rank": 2,
               "number": 1,
               "nameZh": "力先生",
-              "nameEn": "Lindermann"
+              "nameEn": "Lindermann",
+              "winOdds": 3.5
             },
             {
               "rank": 3,
               "number": 6,
               "nameZh": "天鳥俠義",
-              "nameEn": "Birdman"
+              "nameEn": "Birdman",
+              "winOdds": 5.5
             }
           ]
         },
         {
           "no": "S1-8",
           "name": "自然派錦標",
+          "postTimeHkt": "14:15",
           "top3": [
             {
               "rank": 1,
               "nameZh": "Zahrann",
-              "nameEn": "Zahrann"
+              "nameEn": "Zahrann",
+              "winOdds": 4.5
             },
             {
               "rank": 2,
               "nameZh": "Saint George",
-              "nameEn": "Saint George"
+              "nameEn": "Saint George",
+              "winOdds": 6
             },
             {
               "rank": 3,
               "nameZh": "Campaldino",
-              "nameEn": "Campaldino"
+              "nameEn": "Campaldino",
+              "winOdds": 14
             }
           ]
         },
         {
           "no": "S1-9",
           "name": "羅柏奇勒爵士錦標",
+          "postTimeHkt": "14:50",
           "top3": [
             {
               "rank": 1,
               "nameZh": "星彩女兒",
-              "nameEn": "Lady Shenandoah"
+              "nameEn": "Lady Shenandoah",
+              "winOdds": 5
             },
             {
               "rank": 2,
               "nameZh": "天使資金",
-              "nameEn": "Angel Capital"
+              "nameEn": "Angel Capital",
+              "winOdds": 7
             },
             {
               "rank": 3,
               "nameZh": "花之萼",
-              "nameEn": "Sepals"
+              "nameEn": "Sepals",
+              "winOdds": 11
             }
           ]
         },
         {
           "no": "S1-10",
           "name": "指標評分84讓賽",
+          "postTimeHkt": "15:25",
           "note": "賽果（已完）",
           "top3": [
             {
@@ -149,5 +166,14 @@
       ]
     }
   ],
-  "updatedAt": "2026-09-19 16:52"
+  "calendarDays": [
+    { "date": "2026-09-06", "label": "沙田", "type": "local" },
+    { "date": "2026-09-09", "label": "跑馬地", "type": "local" },
+    { "date": "2026-09-13", "label": "沙田", "type": "local" },
+    { "date": "2026-09-16", "label": "跑馬地", "type": "local" },
+    { "date": "2026-09-19", "label": "海外S1", "type": "overseas" },
+    { "date": "2026-09-23", "label": "跑馬地", "type": "local" },
+    { "date": "2026-09-27", "label": "沙田", "type": "local" }
+  ],
+  "updatedAt": "2026-09-19 16:55"
 }
