@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#b8dff5" />
+  <meta name="description" content="馬評人 · 三支最佳預測 — 每場只推三支" />
+  <title>馬評人 · 三支最佳預測</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=1789803860" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="header-eyebrow">HKJC TIPS</div>
+      <h1>馬評人 · 三支最佳預測</h1>
+      <p class="header-sub">本地＋馬會可投海外賽 · 每場三支</p>
+      <p class="header-updated" id="header-updated"></p>
+    </header>
+
+    <nav id="nav-bar" class="nav-bar hidden" aria-label="導航">
+      <button type="button" id="btn-back" class="btn-back" aria-label="返回賽日列表">
+        ← 返回
+      </button>
+      <span id="nav-title" class="nav-title"></span>
+    </nav>
+
+    <div id="loading" class="state-msg">載入中…</div>
+
+    <main id="view-meetings" class="meeting-list hidden" aria-label="賽日列表"></main>
+    <main id="view-races" class="hidden" aria-label="場次預測"></main>
+
+    <footer class="footer">
+      <p>僅供參考，賽馬有風險，注碼自決</p>
+    </footer>
+  </div>
+  <script src="app.js?v=1789803860"></script>
+</body>
+</html>
