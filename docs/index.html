@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=202609191705" />
+  <link rel="stylesheet" href="styles.css?v=202609191722" />
 </head>
 <body>
   <div class="app">
@@ -29,14 +29,30 @@
 
     <div id="loading" class="state-msg">載入中…</div>
 
-    <main id="view-meetings" class="meeting-list hidden" aria-label="賽日列表"></main>
-    <main id="view-races" class="hidden" aria-label="場次預測"></main>
+    <div class="layout">
+      <div class="main-col">
+        <main id="view-meetings" class="meeting-list hidden" aria-label="賽日列表"></main>
+        <main id="view-races" class="hidden" aria-label="場次預測"></main>
+      </div>
+
+      <aside id="results-sidebar" class="results-sidebar" aria-label="賽果">
+        <button type="button" id="results-toggle" class="results-toggle" aria-expanded="false" aria-controls="results-panel">
+          <span class="results-toggle-label">賽果</span>
+          <span id="results-count" class="results-count"></span>
+          <span class="results-chevron" aria-hidden="true">▼</span>
+        </button>
+        <div id="results-panel" class="results-panel" hidden>
+          <h2 class="results-title">賽果</h2>
+          <div id="results-body" class="results-body"></div>
+        </div>
+      </aside>
+    </div>
 
     <footer class="footer">
       <p>僅供參考，賽馬有風險，注碼自決</p>
       <p class="footer-note">賠率為參考快照，非官方 SP</p>
     </footer>
   </div>
-  <script src="app.js?v=202609191705"></script>
+  <script src="app.js?v=202609191722"></script>
 </body>
 </html>

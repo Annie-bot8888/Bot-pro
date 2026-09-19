@@ -231,6 +231,7 @@ const state = {
   meetingId: null,
   calYear: null,
   calMonth: null, // 0-indexed
+  resultsOpen: false, // mobile collapsible 「賽果」
 };
 
 const $ = (sel) => document.querySelector(sel);
@@ -504,6 +505,117 @@ function bindCalendarEvents(root) {
   });
 }
 
+
+/** Race has official/resulted top3 — prefer note「賽果」 */
+function isResultedRace(race) {
+  if (!race) return false;
+  if (race.resulted === true) return true;
+  const note = race.note != null ? String(race.note) : "";
+  if (note.includes("賽果")) return true;
+  const st = race.status != null ? String(race.status) : "";
+  if (st && /(已完|完賽|賽果|finished|resulted)/i.test(st)) return true;
+  return false;
+}
+
+function shortRaceName(name) {
+  if (!name) return "";
+  const s = String(name).trim();
+  return s.length > 14 ? s.slice(0, 14) + "…" : s;
+}
+
+/** Meeting whose results should appear in the sidebar */
+function getResultsMeeting() {
+  const meetings = state.data && state.data.meetings ? state.data.meetings : [];
+  if (state.view === "races" && state.meetingId) {
+    return meetings.find((m) => m.id === state.meetingId) || null;
+  }
+  // Home: latest by date; prefer one that already has results
+  const sorted = [...meetings].sort((a, b) =>
+    String(b.date || "").localeCompare(String(a.date || ""))
+  );
+  const withResults = sorted.find((m) =>
+    (m.races || []).some(isResultedRace)
+  );
+  return withResults || sorted[0] || null;
+}
+
+function renderResultPlace(h) {
+  const rank = h.rank || 0;
+  const mark = RANK_MARKS[rank] || String(rank);
+  const winFmt = formatOdds(h.winOdds);
+  const odds = winFmt
+    ? `<span class="wo">${escapeHtml(winFmt)}</span>`
+    : `<span class="wo"></span>`;
+  return `
+    <li class="result-place r${rank}">
+      <span class="rm r${rank}">${mark}</span>
+      <span class="sn">${escapeHtml(h.number != null && h.number !== "" ? String(h.number) : "—")}</span>
+      <span class="hz">${escapeHtml(h.nameZh || "")}</span>
+      ${odds}
+    </li>
+  `;
+}
+
+function renderResultRow(race) {
+  const top3 = Array.isArray(race.top3)
+    ? [...race.top3].sort((a, b) => (a.rank || 0) - (b.rank || 0))
+    : [];
+  const places = top3.length
+    ? `<ul class="result-places">${top3.map(renderResultPlace).join("")}</ul>`
+    : `<div class="results-empty" style="padding:0.35rem 0;letter-spacing:0.06em;font-size:0.8rem">—</div>`;
+
+  return `
+    <article class="result-row">
+      <div class="result-race-head">
+        <span class="result-race-no">${escapeHtml(String(race.no))}</span>
+        <span class="result-race-name">${escapeHtml(shortRaceName(race.name))}</span>
+      </div>
+      ${places}
+    </article>
+  `;
+}
+
+function renderResultsSidebar() {
+  const body = $("#results-body");
+  const countEl = $("#results-count");
+  const sidebar = $("#results-sidebar");
+  const panel = $("#results-panel");
+  if (!body || !sidebar) return;
+
+  const meeting = getResultsMeeting();
+  const resulted = meeting
+    ? (meeting.races || []).filter(isResultedRace)
+    : [];
+
+  if (countEl) {
+    countEl.textContent = resulted.length
+      ? `${resulted.length} 場`
+      : "";
+  }
+
+  if (!resulted.length) {
+    body.innerHTML = `<div class="results-empty">暫未有賽果</div>`;
+  } else {
+    body.innerHTML = resulted.map(renderResultRow).join("");
+  }
+
+  // Mobile: honour collapse; desktop CSS forces panel visible
+  if (panel) {
+    if (state.resultsOpen) {
+      panel.removeAttribute("hidden");
+      sidebar.classList.add("is-open");
+    } else {
+      panel.setAttribute("hidden", "");
+      sidebar.classList.remove("is-open");
+    }
+  }
+
+  const toggle = $("#results-toggle");
+  if (toggle) {
+    toggle.setAttribute("aria-expanded", state.resultsOpen ? "true" : "false");
+  }
+}
+
 function renderMeetings() {
   const list = $("#view-meetings");
   const racesView = $("#view-races");
@@ -681,6 +793,7 @@ function render() {
   } else {
     renderMeetings();
   }
+  renderResultsSidebar();
 }
 
 function bindNav() {
@@ -689,6 +802,14 @@ function bindNav() {
     state.meetingId = null;
     render();
   });
+
+  const toggle = $("#results-toggle");
+  if (toggle) {
+    toggle.addEventListener("click", () => {
+      state.resultsOpen = !state.resultsOpen;
+      renderResultsSidebar();
+    });
+  }
 }
 
 async function init() {
