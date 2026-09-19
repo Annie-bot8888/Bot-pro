@@ -479,3 +479,301 @@ body {
   color: var(--sky-deep);
   letter-spacing: 0.04em;
 }
+
+/* ——— Calendar ——— */
+.calendar-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 0.9rem 0.85rem;
+  margin-bottom: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.cal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.cal-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--sky-deep);
+  letter-spacing: 0.04em;
+}
+
+.cal-nav {
+  appearance: none;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--sky-deep);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.cal-nav:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-accent);
+}
+
+.cal-nav:focus-visible {
+  outline: 2px solid var(--sky);
+  outline-offset: 2px;
+}
+
+.cal-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.cal-wd {
+  text-align: center;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  padding: 0.2rem 0;
+}
+
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.25rem;
+}
+
+.cal-cell {
+  position: relative;
+  min-height: 3.1rem;
+  border-radius: 8px;
+  padding: 0.25rem 0.15rem 0.35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  background: transparent;
+}
+
+.cal-cell.empty {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.cal-cell.race-day {
+  cursor: pointer;
+  background: rgba(74, 159, 216, 0.08);
+  border: 1px solid rgba(74, 159, 216, 0.25);
+  transition: background 0.12s, border-color 0.12s, transform 0.1s;
+}
+
+.cal-cell.race-day:hover {
+  background: rgba(74, 159, 216, 0.16);
+  border-color: var(--border-accent);
+  transform: translateY(-1px);
+}
+
+.cal-cell.race-day:focus-visible {
+  outline: 2px solid var(--sky);
+  outline-offset: 1px;
+}
+
+.cal-cell.today .cal-num {
+  background: var(--sky-deep);
+  color: #fff;
+  border-radius: 999px;
+  width: 1.55rem;
+  height: 1.55rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cal-num {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.cal-dots {
+  display: flex;
+  gap: 0.2rem;
+  margin-top: 0.1rem;
+}
+
+.cal-dot {
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.cal-dot.local {
+  background: var(--status-live);
+}
+
+.cal-dot.overseas {
+  background: var(--sky-deep);
+}
+
+.cal-day-label {
+  font-size: 0.55rem;
+  color: var(--text-muted);
+  line-height: 1.2;
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: 0;
+}
+
+.cal-legend {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.65rem;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.cal-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.cal-legend .cal-dot {
+  width: 0.45rem;
+  height: 0.45rem;
+}
+
+.section-heading {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--sky-deep);
+  margin-bottom: 0.65rem;
+}
+
+.meeting-list-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+/* ——— Post time ——— */
+.race-post {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--sky-deep);
+  background: rgba(74, 159, 216, 0.12);
+  border: 1px solid rgba(74, 159, 216, 0.35);
+  padding: 0.1rem 0.45rem;
+  border-radius: 6px;
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ——— Odds ——— */
+.horse-row {
+  grid-template-columns: 2rem 2.4rem 1fr auto;
+}
+
+.horse-zh-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.odds-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.05rem;
+  min-width: 3.4rem;
+  text-align: right;
+}
+
+.odds-label {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.odds-win {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--sky-deep);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+.odds-place {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.footer-note {
+  margin-top: 0.35rem;
+  font-size: 0.68rem !important;
+  color: var(--text-dim);
+  opacity: 0.9;
+}
+
+/* ——— Toast ——— */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%) translateY(1rem);
+  background: rgba(26, 58, 82, 0.92);
+  color: #fff;
+  padding: 0.65rem 1.2rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-family: var(--font);
+  box-shadow: 0 8px 28px rgba(26, 58, 82, 0.28);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+  z-index: 1000;
+  letter-spacing: 0.06em;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+@media (max-width: 480px) {
+  .cal-cell {
+    min-height: 2.7rem;
+  }
+
+  .cal-day-label {
+    display: none;
+  }
+
+  .horse-row {
+    grid-template-columns: 1.75rem 2.1rem 1fr auto;
+  }
+
+  .odds-win {
+    font-size: 0.88rem;
+  }
+}

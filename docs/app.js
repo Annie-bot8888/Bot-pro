@@ -4,6 +4,7 @@
  */
 
 const RANK_MARKS = { 1: "①", 2: "②", 3: "③" };
+const WEEKDAYS = ["日", "一", "二", "三", "四", "五", "六"];
 
 /** @type {typeof EMBEDDED_DATA} */
 const EMBEDDED_DATA = {
@@ -19,97 +20,114 @@ const EMBEDDED_DATA = {
         {
           "no": "S1-6",
           "name": "功必有因錦標",
+          "postTimeHkt": "13:00",
+          "note": "賽果（已完）",
           "top3": [
             {
               "rank": 1,
               "number": 3,
               "nameZh": "北極角",
-              "nameEn": "Point Barrow"
+              "nameEn": "Point Barrow",
+              "winOdds": 4.6
             },
             {
               "rank": 2,
               "number": 10,
               "nameZh": "新娘舞曲",
-              "nameEn": "Bridal Waltz"
+              "nameEn": "Bridal Waltz",
+              "winOdds": 2.1
             },
             {
               "rank": 3,
               "number": 2,
               "nameZh": "慈悲之行",
-              "nameEn": "Inkaruna"
+              "nameEn": "Inkaruna",
+              "winOdds": 15
             }
-          ],
-          "note": "賽果（已完）"
+          ]
         },
         {
           "no": "S1-7",
           "name": "木下錦標",
+          "postTimeHkt": "13:35",
           "top3": [
             {
               "rank": 1,
               "number": 5,
               "nameZh": "星辰征駕",
-              "nameEn": "Cosmic Crusader"
+              "nameEn": "Cosmic Crusader",
+              "winOdds": 2.8
             },
             {
               "rank": 2,
               "number": 1,
               "nameZh": "力先生",
-              "nameEn": "Lindermann"
+              "nameEn": "Lindermann",
+              "winOdds": 3.5
             },
             {
               "rank": 3,
               "number": 6,
               "nameZh": "天鳥俠義",
-              "nameEn": "Birdman"
+              "nameEn": "Birdman",
+              "winOdds": 5.5
             }
           ]
         },
         {
           "no": "S1-8",
           "name": "自然派錦標",
+          "postTimeHkt": "14:15",
           "top3": [
             {
               "rank": 1,
               "nameZh": "Zahrann",
-              "nameEn": "Zahrann"
+              "nameEn": "Zahrann",
+              "winOdds": 4.5
             },
             {
               "rank": 2,
               "nameZh": "Saint George",
-              "nameEn": "Saint George"
+              "nameEn": "Saint George",
+              "winOdds": 6
             },
             {
               "rank": 3,
               "nameZh": "Campaldino",
-              "nameEn": "Campaldino"
+              "nameEn": "Campaldino",
+              "winOdds": 14
             }
           ]
         },
         {
           "no": "S1-9",
           "name": "羅柏奇勒爵士錦標",
+          "postTimeHkt": "14:50",
           "top3": [
             {
               "rank": 1,
               "nameZh": "星彩女兒",
-              "nameEn": "Lady Shenandoah"
+              "nameEn": "Lady Shenandoah",
+              "winOdds": 5
             },
             {
               "rank": 2,
               "nameZh": "天使資金",
-              "nameEn": "Angel Capital"
+              "nameEn": "Angel Capital",
+              "winOdds": 7
             },
             {
               "rank": 3,
               "nameZh": "花之萼",
-              "nameEn": "Sepals"
+              "nameEn": "Sepals",
+              "winOdds": 11
             }
           ]
         },
         {
           "no": "S1-10",
           "name": "指標評分84讓賽",
+          "postTimeHkt": "15:25",
           "note": "賽果（已完）",
           "top3": [
             {
@@ -157,13 +175,24 @@ const EMBEDDED_DATA = {
       ]
     }
   ],
-  "updatedAt": "2026-09-19 16:52"
+  "calendarDays": [
+    { "date": "2026-09-06", "label": "沙田", "type": "local" },
+    { "date": "2026-09-09", "label": "跑馬地", "type": "local" },
+    { "date": "2026-09-13", "label": "沙田", "type": "local" },
+    { "date": "2026-09-16", "label": "跑馬地", "type": "local" },
+    { "date": "2026-09-19", "label": "海外S1", "type": "overseas" },
+    { "date": "2026-09-23", "label": "跑馬地", "type": "local" },
+    { "date": "2026-09-27", "label": "沙田", "type": "local" }
+  ],
+  "updatedAt": "2026-09-19 16:55"
 };
 
 const state = {
   data: null,
   view: "meetings", // "meetings" | "races"
   meetingId: null,
+  calYear: null,
+  calMonth: null, // 0-indexed
 };
 
 const $ = (sel) => document.querySelector(sel);
@@ -174,12 +203,123 @@ function formatDate(iso) {
   return `${y}年${parseInt(m, 10)}月${parseInt(d, 10)}日`;
 }
 
+function pad2(n) {
+  return String(n).padStart(2, "0");
+}
+
+function isoFromYMD(y, m0, d) {
+  return `${y}-${pad2(m0 + 1)}-${pad2(d)}`;
+}
+
+function todayIsoHkt() {
+  try {
+    return new Intl.DateTimeFormat("en-CA", {
+      timeZone: "Asia/Hong_Kong",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    }).format(new Date());
+  } catch {
+    const d = new Date();
+    return isoFromYMD(d.getFullYear(), d.getMonth(), d.getDate());
+  }
+}
+
 function statusClass(status) {
   if (!status) return "pending";
   if (status.includes("進行") || status.includes("直播") || status.includes("賽中")) {
     return "live";
   }
   return "pending";
+}
+
+function isOverseasMeeting(m) {
+  return (
+    m.type === "overseas" ||
+    (m.venue || "").includes("海外") ||
+    (m.bettable || "").includes("馬會可投")
+  );
+}
+
+function formatOdds(val) {
+  if (val == null || val === "") return null;
+  const n = typeof val === "number" ? val : parseFloat(String(val).replace(/\$/g, ""));
+  if (!Number.isFinite(n)) {
+    const s = String(val).trim();
+    return s ? (s.startsWith("$") ? s : `$${s}`) : null;
+  }
+  const formatted = Number.isInteger(n) ? String(n) : n.toFixed(1).replace(/\.0$/, "");
+  return `$${formatted}`;
+}
+
+/** Merge calendarDays + meeting dates → Map<iso, { types, labels, meetingIds }> */
+function buildDayIndex() {
+  const map = new Map();
+  const ensure = (date) => {
+    if (!map.has(date)) {
+      map.set(date, { types: new Set(), labels: [], meetingIds: [] });
+    }
+    return map.get(date);
+  };
+
+  for (const cd of state.data.calendarDays || []) {
+    if (!cd || !cd.date) continue;
+    const e = ensure(cd.date);
+    const t = cd.type === "overseas" ? "overseas" : "local";
+    e.types.add(t);
+    if (cd.label) e.labels.push(cd.label);
+  }
+
+  for (const m of state.data.meetings || []) {
+    if (!m || !m.date) continue;
+    const e = ensure(m.date);
+    e.types.add(isOverseasMeeting(m) ? "overseas" : "local");
+    if (m.id) e.meetingIds.push(m.id);
+  }
+
+  return map;
+}
+
+function defaultCalendarMonth() {
+  const today = todayIsoHkt();
+  const [ty, tm] = today.split("-").map((x) => parseInt(x, 10));
+  const meetings = state.data.meetings || [];
+  const calDays = state.data.calendarDays || [];
+  const allDates = [
+    ...meetings.map((m) => m.date).filter(Boolean),
+    ...calDays.map((c) => c.date).filter(Boolean),
+  ].sort();
+
+  // Prefer current month if it has race days; else first meeting/calendar month
+  const hasThisMonth = allDates.some((d) => d.startsWith(`${ty}-${pad2(tm)}`));
+  if (hasThisMonth || !allDates.length) {
+    return { year: ty, month: tm - 1 };
+  }
+  const [fy, fm] = allDates[0].split("-").map((x) => parseInt(x, 10));
+  return { year: fy, month: fm - 1 };
+}
+
+function ensureCalMonth() {
+  if (state.calYear == null || state.calMonth == null) {
+    const d = defaultCalendarMonth();
+    state.calYear = d.year;
+    state.calMonth = d.month;
+  }
+}
+
+function showToast(msg) {
+  let el = $("#toast");
+  if (!el) {
+    el = document.createElement("div");
+    el.id = "toast";
+    el.className = "toast";
+    el.setAttribute("role", "status");
+    document.body.appendChild(el);
+  }
+  el.textContent = msg;
+  el.classList.add("show");
+  clearTimeout(showToast._t);
+  showToast._t = setTimeout(() => el.classList.remove("show"), 2200);
 }
 
 async function loadData() {
@@ -195,6 +335,137 @@ async function loadData() {
   }
 }
 
+function renderCalendar() {
+  ensureCalMonth();
+  const y = state.calYear;
+  const m0 = state.calMonth;
+  const dayIndex = buildDayIndex();
+  const today = todayIsoHkt();
+
+  const firstDow = new Date(y, m0, 1).getDay();
+  const daysInMonth = new Date(y, m0 + 1, 0).getDate();
+  const title = `${y}年${m0 + 1}月`;
+
+  const cells = [];
+  for (let i = 0; i < firstDow; i++) {
+    cells.push(`<div class="cal-cell empty" aria-hidden="true"></div>`);
+  }
+
+  for (let d = 1; d <= daysInMonth; d++) {
+    const iso = isoFromYMD(y, m0, d);
+    const info = dayIndex.get(iso);
+    const isToday = iso === today;
+    const hasRace = !!info;
+    const hasMeeting = info && info.meetingIds.length > 0;
+    const types = info ? [...info.types] : [];
+    const typeClass = types.includes("overseas") && types.includes("local")
+      ? "both"
+      : types.includes("overseas")
+        ? "overseas"
+        : types.includes("local")
+          ? "local"
+          : "";
+
+    const dots = types.length
+      ? `<span class="cal-dots">${types
+          .map((t) => `<span class="cal-dot ${t}" title="${t === "overseas" ? "海外" : "本地"}"></span>`)
+          .join("")}</span>`
+      : "";
+
+    const label = info && info.labels[0]
+      ? `<span class="cal-day-label">${escapeHtml(info.labels[0])}</span>`
+      : "";
+
+    const classes = [
+      "cal-cell",
+      hasRace ? "race-day" : "",
+      hasMeeting ? "has-meeting" : "",
+      isToday ? "today" : "",
+      typeClass,
+    ]
+      .filter(Boolean)
+      .join(" ");
+
+    const clickable = hasRace ? `data-date="${escapeAttr(iso)}" role="button" tabindex="0"` : "";
+
+    cells.push(`
+      <div class="${classes}" ${clickable} aria-label="${escapeAttr(iso)}${hasRace ? " 賽日" : ""}">
+        <span class="cal-num">${d}</span>
+        ${dots}
+        ${label}
+      </div>
+    `);
+  }
+
+  return `
+    <section class="calendar-panel" aria-label="賽日月曆">
+      <div class="cal-header">
+        <button type="button" class="cal-nav" id="cal-prev" aria-label="上一個月">‹</button>
+        <h2 class="cal-title">${escapeHtml(title)}</h2>
+        <button type="button" class="cal-nav" id="cal-next" aria-label="下一個月">›</button>
+      </div>
+      <div class="cal-weekdays">
+        ${WEEKDAYS.map((w) => `<div class="cal-wd">${w}</div>`).join("")}
+      </div>
+      <div class="cal-grid">
+        ${cells.join("")}
+      </div>
+      <div class="cal-legend">
+        <span><i class="cal-dot local"></i> 本地</span>
+        <span><i class="cal-dot overseas"></i> 海外</span>
+      </div>
+    </section>
+  `;
+}
+
+function bindCalendarEvents(root) {
+  const prev = root.querySelector("#cal-prev");
+  const next = root.querySelector("#cal-next");
+  if (prev) {
+    prev.addEventListener("click", () => {
+      state.calMonth -= 1;
+      if (state.calMonth < 0) {
+        state.calMonth = 11;
+        state.calYear -= 1;
+      }
+      render();
+    });
+  }
+  if (next) {
+    next.addEventListener("click", () => {
+      state.calMonth += 1;
+      if (state.calMonth > 11) {
+        state.calMonth = 0;
+        state.calYear += 1;
+      }
+      render();
+    });
+  }
+
+  const dayIndex = buildDayIndex();
+  root.querySelectorAll(".cal-cell.race-day").forEach((cell) => {
+    const open = () => {
+      const iso = cell.dataset.date;
+      const info = dayIndex.get(iso);
+      if (!info) return;
+      if (info.meetingIds.length) {
+        state.meetingId = info.meetingIds[0];
+        state.view = "races";
+        render();
+      } else {
+        showToast("未有預測");
+      }
+    };
+    cell.addEventListener("click", open);
+    cell.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        open();
+      }
+    });
+  });
+}
+
 function renderMeetings() {
   const list = $("#view-meetings");
   const racesView = $("#view-races");
@@ -204,33 +475,45 @@ function renderMeetings() {
   nav.classList.add("hidden");
 
   const meetings = state.data.meetings || [];
+  const calHtml = renderCalendar();
+
+  let listHtml;
   if (!meetings.length) {
-    list.innerHTML = `<div class="state-msg">暫無賽日資料</div>`;
-    return;
+    listHtml = `<div class="state-msg">暫無賽日資料</div>`;
+  } else {
+    listHtml = `
+      <div class="meeting-list-inner">
+        <h2 class="section-heading">賽日列表</h2>
+        ${meetings
+          .map((m) => {
+            const raceCount = (m.races || []).length;
+            const sc = statusClass(m.status);
+            const overseas = isOverseasMeeting(m);
+            const typeClass = overseas ? "overseas" : "local";
+            const typeLabel = escapeHtml(
+              m.bettable || (overseas ? "馬會可投海外賽" : "本地賽事")
+            );
+            return `
+              <button type="button" class="meeting-card" data-id="${escapeAttr(m.id)}" aria-label="${escapeAttr(m.venue)}">
+                <div class="meeting-card-top">
+                  <span class="meeting-date">${escapeHtml(formatDate(m.date))}</span>
+                  <span class="status-pill ${sc}">${escapeHtml(m.status || "待更新")}</span>
+                </div>
+                <div class="meeting-venue">${escapeHtml(m.venue)}</div>
+                <div class="meeting-meta-row">
+                  <span class="type-pill ${typeClass}">${typeLabel}</span>
+                  <span>${raceCount} 場賽事</span>
+                </div>
+              </button>
+            `;
+          })
+          .join("")}
+      </div>
+    `;
   }
 
-  list.innerHTML = meetings
-    .map((m) => {
-      const raceCount = (m.races || []).length;
-      const sc = statusClass(m.status);
-      const isOverseas = m.type === "overseas" || (m.venue || "").includes("海外") || (m.bettable || "").includes("馬會可投");
-      const typeClass = isOverseas ? "overseas" : "local";
-      const typeLabel = escapeHtml(m.bettable || (isOverseas ? "馬會可投海外賽" : "本地賽事"));
-      return `
-        <button type="button" class="meeting-card" data-id="${escapeAttr(m.id)}" aria-label="${escapeAttr(m.venue)}">
-          <div class="meeting-card-top">
-            <span class="meeting-date">${escapeHtml(formatDate(m.date))}</span>
-            <span class="status-pill ${sc}">${escapeHtml(m.status || "待更新")}</span>
-          </div>
-          <div class="meeting-venue">${escapeHtml(m.venue)}</div>
-          <div class="meeting-meta-row">
-            <span class="type-pill ${typeClass}">${typeLabel}</span>
-            <span>${raceCount} 場賽事</span>
-          </div>
-        </button>
-      `;
-    })
-    .join("");
+  list.innerHTML = calHtml + listHtml;
+  bindCalendarEvents(list);
 
   list.querySelectorAll(".meeting-card").forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -273,6 +556,9 @@ function renderRaceBlock(race) {
   const note = race.note
     ? `<span class="race-note">${escapeHtml(race.note)}</span>`
     : "";
+  const postTime = race.postTimeHkt
+    ? `<span class="race-post" title="開跑時間（香港時間）">${escapeHtml(race.postTimeHkt)}</span>`
+    : "";
 
   let body;
   if (!top3.length) {
@@ -291,6 +577,7 @@ function renderRaceBlock(race) {
       <header class="race-header">
         <div class="race-no-name">
           <span class="race-no">${escapeHtml(String(race.no))}</span>
+          ${postTime}
           <span class="race-name">${escapeHtml(race.name || "")}</span>
         </div>
         ${note}
@@ -306,9 +593,16 @@ function renderHorseRow(h) {
   const badge =
     rank === 1
       ? `<span class="badge-win">獨贏首選</span>`
-      : `<span></span>`;
+      : "";
   const en = h.nameEn
     ? `<div class="horse-en">${escapeHtml(h.nameEn)}</div>`
+    : "";
+
+  const winFmt = formatOdds(h.winOdds);
+  const placeFmt = formatOdds(h.placeOdds);
+  const winDisplay = winFmt || "—";
+  const placeHtml = placeFmt
+    ? `<span class="odds-place">位置 ${escapeHtml(placeFmt)}</span>`
     : "";
 
   return `
@@ -316,10 +610,17 @@ function renderHorseRow(h) {
       <span class="rank-mark r${rank}" aria-label="第${rank}名">${mark}</span>
       <span class="saddle">${escapeHtml(h.number != null && h.number !== "" ? String(h.number) : "—")}</span>
       <div class="horse-names">
-        <div class="horse-zh">${escapeHtml(h.nameZh || "")}</div>
+        <div class="horse-zh-row">
+          <span class="horse-zh">${escapeHtml(h.nameZh || "")}</span>
+          ${badge}
+        </div>
         ${en}
       </div>
-      ${badge}
+      <div class="odds-block" title="參考賠率">
+        <span class="odds-label">獨贏</span>
+        <span class="odds-win">${escapeHtml(winDisplay)}</span>
+        ${placeHtml}
+      </div>
     </li>
   `;
 }
