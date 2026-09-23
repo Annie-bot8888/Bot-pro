@@ -56,7 +56,7 @@ body {
 }
 
 .app {
-  max-width: 720px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 1.25rem 1rem 3rem;
   min-height: 100vh;
@@ -382,10 +382,10 @@ body {
   letter-spacing: 0.15em;
 }
 
-/* Tip vs official result side-by-side */
+/* Tip / cold / official result side-by-side */
 .race-compare {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 0;
   border-top: 1px solid rgba(197, 221, 240, 0.85);
 }
@@ -399,16 +399,41 @@ body {
   background: linear-gradient(180deg, rgba(240, 248, 255, 0.55), transparent 40%);
 }
 
+.compare-col.cold-col {
+  border-right: 1px solid rgba(197, 221, 240, 0.85);
+  background: linear-gradient(180deg, rgba(236, 232, 250, 0.55), transparent 40%);
+}
+
 .compare-col.result-col {
-  background: linear-gradient(180deg, rgba(232, 246, 236, 0.45), transparent 40%);
+  background: linear-gradient(180deg, rgba(255, 236, 220, 0.55), transparent 40%);
 }
 
 .compare-col .section-label {
   padding-top: 0.7rem;
 }
 
+.compare-col.cold-col .section-label {
+  color: #5b4a9e;
+}
+
 .compare-col.result-col .section-label {
-  color: #2f7a4a;
+  color: #c45c2a;
+}
+
+.hot-bets,
+.cold-bets {
+  margin: 0 0.75rem 0.75rem;
+  padding: 0.35rem 0.5rem;
+  font-size: 0.68rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.cold-bets {
+  color: #6a5a9e;
 }
 
 .race-block.awaiting-result .compare-col.result-col {
@@ -459,7 +484,8 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .compare-col.tip-col {
+  .compare-col.tip-col,
+  .compare-col.cold-col {
     border-right: none;
     border-bottom: 1px solid rgba(197, 221, 240, 0.85);
   }

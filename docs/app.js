@@ -786,16 +786,30 @@ function saddleKey(h) {
   return String(h.number);
 }
 
+function renderBetsLine(items, className) {
+  if (!Array.isArray(items) || !items.length) return "";
+  const lines = items
+    .filter((x) => typeof x === "string" && x.trim())
+    .map((x) => escapeHtml(x.trim()));
+  if (!lines.length) return "";
+  return `<div class="${className}">${lines.join(" · ")}</div>`;
+}
+
 function renderRaceBlock(race) {
   const top3 = Array.isArray(race.top3)
     ? [...race.top3].sort((a, b) => (a.rank || 0) - (b.rank || 0))
+    : [];
+  const cold3 = Array.isArray(race.cold3)
+    ? [...race.cold3].sort((a, b) => (a.rank || 0) - (b.rank || 0))
     : [];
   const result = getRaceResult(race);
   const hasResult = result.length > 0 || isResultedRace(race);
 
   const tipNums = new Set(top3.map(saddleKey).filter(Boolean));
+  const coldNums = new Set(cold3.map(saddleKey).filter(Boolean));
+  const tipOrColdNums = new Set([...tipNums, ...coldNums]);
   const resultNums = new Set(result.map(saddleKey).filter(Boolean));
-  const matchedNums = new Set([...tipNums].filter((n) => resultNums.has(n)));
+  const matchedNums = new Set([...tipOrColdNums].filter((n) => resultNums.has(n)));
 
   const note = race.note
     ? `<span class="race-note">${escapeHtml(race.note)}</span>`
@@ -803,6 +817,10 @@ function renderRaceBlock(race) {
   const postTime = race.postTimeHkt
     ? `<span class="race-post" title="開跑時間（香港時間）">${escapeHtml(race.postTimeHkt)}</span>`
     : "";
+
+  const brief = race.brief || {};
+  const hotBets = renderBetsLine(brief.bets, "hot-bets");
+  const coldBets = renderBetsLine(brief.coldBets, "cold-bets");
 
   let tipBody;
   if (!top3.length) {
@@ -812,6 +830,19 @@ function renderRaceBlock(race) {
       <ul class="top3-list">
         ${top3.map((h) => renderHorseRow(h, matchedNums)).join("")}
       </ul>
+      ${hotBets}
+    `;
+  }
+
+  let coldBody;
+  if (!cold3.length) {
+    coldBody = `<div class="empty-tip">待補</div>`;
+  } else {
+    coldBody = `
+      <ul class="top3-list cold-list">
+        ${cold3.map((h) => renderHorseRow(h, matchedNums)).join("")}
+      </ul>
+      ${coldBets}
     `;
   }
 
@@ -842,8 +873,12 @@ function renderRaceBlock(race) {
       </header>
       <div class="race-compare">
         <div class="compare-col tip-col">
-          <div class="section-label">預測</div>
+          <div class="section-label">熱門</div>
           ${tipBody}
+        </div>
+        <div class="compare-col cold-col">
+          <div class="section-label">冷門</div>
+          ${coldBody}
         </div>
         <div class="compare-col result-col">
           <div class="section-label">賽果</div>
