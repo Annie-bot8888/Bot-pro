@@ -228,7 +228,7 @@
       "venue": "跑馬地夜賽",
       "type": "local",
       "bettable": "本地賽事",
-      "status": "第4場已完／第5場已預測",
+      "status": "第5場已完／第6場已預測",
       "races": [
         {
           "no": "1",
@@ -608,7 +608,7 @@
           "postTimeHkt": "20:40",
           "distance": "1650米",
           "track": "草地 C／好地",
-          "note": "預測已出",
+          "note": "賽果（已完）",
           "top3": [
             {
               "rank": 1,
@@ -632,7 +632,7 @@
               "winOdds": 7.7
             }
           ],
-          "resulted": false,
+          "resulted": true,
           "cold3": [
             {
               "rank": 1,
@@ -675,16 +675,105 @@
               "連贏 5-3、5-4",
               "三重彩軸5腳3/4/8"
             ]
-          }
+          },
+          "result": [
+            {
+              "rank": 1,
+              "number": 6,
+              "nameZh": "越駿聯歡",
+              "nameEn": "HAPPY SMILE",
+              "winOdds": 8.7
+            },
+            {
+              "rank": 2,
+              "number": 12,
+              "nameZh": "同心",
+              "nameEn": "GAZELEY",
+              "winOdds": null
+            },
+            {
+              "rank": 3,
+              "number": 1,
+              "nameZh": "本領非凡",
+              "nameEn": "GLORIOUS JOURNEY",
+              "winOdds": null
+            }
+          ]
         },
         {
           "no": "6",
           "name": "香島讓賽",
           "postTimeHkt": "21:10",
           "distance": "1000米",
-          "track": "草地",
-          "note": "排位已出",
-          "top3": []
+          "track": "草地 C／好地",
+          "note": "預測已出",
+          "top3": [
+            {
+              "rank": 1,
+              "number": 4,
+              "nameZh": "巴閉王",
+              "nameEn": "Superb King",
+              "winOdds": 2.9
+            },
+            {
+              "rank": 2,
+              "number": 1,
+              "nameZh": "福進",
+              "nameEn": "Jumbo Blessing",
+              "winOdds": 3.1
+            },
+            {
+              "rank": 3,
+              "number": 5,
+              "nameZh": "佐治傳奇",
+              "nameEn": "Georgian Sigma",
+              "winOdds": 9.3
+            }
+          ],
+          "cold3": [
+            {
+              "rank": 1,
+              "number": 12,
+              "nameZh": "馬運高",
+              "nameEn": "Mapogo",
+              "winOdds": 5.7
+            },
+            {
+              "rank": 2,
+              "number": 9,
+              "nameZh": "天火同人",
+              "nameEn": "Harmony Fire",
+              "winOdds": 13
+            },
+            {
+              "rank": 3,
+              "number": 11,
+              "nameZh": "萬眾開心",
+              "nameEn": "Happy United",
+              "winOdds": 21
+            }
+          ],
+          "resulted": false,
+          "predictedAt": "2026-09-23 20:57 HKT",
+          "brief": {
+            "bets": [
+              "獨贏/位置 #4",
+              "連贏/位置Q 4-1、4-5",
+              "三重彩 4為軸配 1/5/12"
+            ],
+            "confidence": "中高（雙熱對壘）",
+            "reasons": [
+              "#4巴閉王 近績2/6/4/2/2/3；上仗谷草1000外疊仍亞軍（輸冠軍僅¾），今檔3＋周俊樂減2負131，所期貼欄跟前有力轉勝；獨贏約2.9大熱、貼士指數次席（賽日約3.1）",
+              "#1福進 近績1/1/6/4/7/5；上仗同程同班勝出（獨贏約5.4），今檔6何澤堯但評分+7負頂磅135，所期仍具班次優勢爭勝；貼士指數最佳（約3.0）、獨贏約3.1",
+              "#5佐治傳奇 近績3/7/3/3/3/4；上仗同場季席，往績谷草1000穩定入位；今檔12外吃虧但艾兆禮續配負128，所期中後位追擊爭位置；貼士指數第三（約8.1）、獨贏約9.3"
+            ],
+            "risks": "#4/#1 雙熱壓縮賠率；#5檔12谷草1000起步吃虧；#12馬運高一檔＋輕磅118盤口縮至約5.7可攪局；#9天火同人上仗同場第四＋黃寶妮減7；步速若亂利跟前列",
+            "coldBets": [
+              "冷獨/位 #12/#9/#11",
+              "連贏 4-12、1-12",
+              "三重彩軸4腳12/9/11"
+            ]
+          }
         },
         {
           "no": "7",
@@ -714,7 +803,7 @@
           "top3": []
         }
       ],
-      "updatedAt": "2026-09-23 20:22 HKT"
+      "updatedAt": "2026-09-23 20:57 HKT"
     }
   ],
   "calendarDays": [
@@ -754,5 +843,5 @@
       "type": "local"
     }
   ],
-  "updatedAt": "2026-09-23 19:21"
+  "updatedAt": "2026-09-23 20:22 HKT"
 }
