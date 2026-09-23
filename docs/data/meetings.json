@@ -228,7 +228,7 @@
       "venue": "跑馬地夜賽",
       "type": "local",
       "bettable": "本地賽事",
-      "status": "第2場已預測",
+      "status": "第1場已完／第2場已預測",
       "races": [
         {
           "no": "1",
@@ -236,25 +236,28 @@
           "postTimeHkt": "18:40",
           "distance": "1650米",
           "track": "草地 C／好地",
-          "note": "預測已出",
+          "note": "賽果（已完）",
           "top3": [
             {
               "rank": 1,
               "number": 3,
               "nameZh": "神駒馬靈",
-              "nameEn": "Soaring Bronco"
+              "nameEn": "Soaring Bronco",
+              "winOdds": 5.1
             },
             {
               "rank": 2,
               "number": 11,
               "nameZh": "東方魅影",
-              "nameEn": "Oriental Surprise"
+              "nameEn": "Oriental Surprise",
+              "winOdds": 3.2
             },
             {
               "rank": 3,
               "number": 8,
               "nameZh": "電訊驕陽",
-              "nameEn": "Telecom Power"
+              "nameEn": "Telecom Power",
+              "winOdds": 4.7
             }
           ],
           "predictedAt": "2026-09-23 18:17 HKT",
@@ -271,7 +274,31 @@
               "#8 近績穩定，袁幸堯減10磅增程1650，盤口有值"
             ],
             "risks": "五班混戰；#6 開心三多外檔要位、#4 紅磚戰士內檔變數；#11 長期未贏或成位置馬"
-          }
+          },
+          "resulted": true,
+          "result": [
+            {
+              "rank": 1,
+              "number": 4,
+              "nameZh": "紅磚戰士",
+              "nameEn": "RED BRICK WARRIOR",
+              "winOdds": 4.5
+            },
+            {
+              "rank": 2,
+              "number": 11,
+              "nameZh": "東方魅影",
+              "nameEn": "ORIENTAL SURPRISE",
+              "winOdds": 3.8
+            },
+            {
+              "rank": 3,
+              "number": 10,
+              "nameZh": "威威父子",
+              "nameEn": "WINDICATOR FAMILY",
+              "winOdds": 13
+            }
+          ]
         },
         {
           "no": "2",
@@ -422,5 +449,5 @@
       "type": "local"
     }
   ],
-  "updatedAt": "2026-09-23 18:40"
+  "updatedAt": "2026-09-23 18:55"
 }
