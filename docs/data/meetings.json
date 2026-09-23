@@ -228,7 +228,7 @@
       "venue": "跑馬地夜賽",
       "type": "local",
       "bettable": "本地賽事",
-      "status": "第2場已完／第3場已預測",
+      "status": "第3場已完／第4場已預測",
       "races": [
         {
           "no": "1",
@@ -427,7 +427,7 @@
           "postTimeHkt": "19:40",
           "distance": "1650米",
           "track": "草地 C／好地",
-          "note": "預測已出",
+          "note": "賽果（已完）",
           "top3": [
             {
               "rank": 1,
@@ -478,6 +478,30 @@
               "nameEn": "",
               "winOdds": null
             }
+          ],
+          "resulted": true,
+          "result": [
+            {
+              "rank": 1,
+              "number": 8,
+              "nameZh": "蹺妙",
+              "nameEn": "AKERMANIS GOLD",
+              "winOdds": 4.4
+            },
+            {
+              "rank": 2,
+              "number": 2,
+              "nameZh": "贏玥",
+              "nameEn": "SHOOTING TO TOP",
+              "winOdds": null
+            },
+            {
+              "rank": 3,
+              "number": 12,
+              "nameZh": "得意佳作",
+              "nameEn": "SURE JOYFUL",
+              "winOdds": null
+            }
           ]
         },
         {
@@ -485,9 +509,74 @@
           "name": "深水灣讓賽",
           "postTimeHkt": "20:10",
           "distance": "1200米",
-          "track": "草地",
-          "note": "排位已出",
-          "top3": []
+          "track": "草地 C／好地",
+          "note": "預測已出",
+          "top3": [
+            {
+              "rank": 1,
+              "number": 6,
+              "nameZh": "快樂神駒",
+              "nameEn": "Cloud Nine",
+              "winOdds": 1.7
+            },
+            {
+              "rank": 2,
+              "number": 4,
+              "nameZh": "星辰千帥",
+              "nameEn": "Brownneedsfurther",
+              "winOdds": 9.4
+            },
+            {
+              "rank": 3,
+              "number": 9,
+              "nameZh": "將傲",
+              "nameEn": "Will Power",
+              "winOdds": 7.6
+            }
+          ],
+          "predictedAt": "2026-09-23 19:46 HKT",
+          "cold3": [
+            {
+              "rank": 1,
+              "number": 11,
+              "nameZh": "焦點",
+              "nameEn": "Podium",
+              "winOdds": 14
+            },
+            {
+              "rank": 2,
+              "number": 1,
+              "nameZh": "沙井之友",
+              "nameEn": "Friends Of Shajing",
+              "winOdds": 7.0
+            },
+            {
+              "rank": 3,
+              "number": 8,
+              "nameZh": "禪勝閃亮",
+              "nameEn": "",
+              "winOdds": 21
+            }
+          ],
+          "brief": {
+            "bets": [
+              "獨贏/位置 #6",
+              "連贏/位置Q 6-4、6-9",
+              "三重彩 6-4-9 匣（可加#1）"
+            ],
+            "confidence": "中高（熱門濃）",
+            "reasons": [
+              "#6 近績4/2/12/4/2/4；上季谷草1200兩亞一季未開齋，上仗外檔受阻第四；今檔2＋潘頓初配（曾試閘第二），所期貼欄跟前有力轉勝；貼士指數最佳、獨贏約1.7",
+              "#4 近績1/2/5/2/11/3；谷草1200場同程勝出紀錄（同場1-3-1），評分+5磅增；檔6艾道拿，今仗預期再爭位置；#3/#7退出後盤口有值",
+              "#9 近績4/4/3/7；檔4奧爾民、負126較輕，配備XB/H/P；貼士指數次熱門之一，今仗預期可跟步入位"
+            ],
+            "risks": "#6 獨贏約1.7過熱，賠率薄；#3應龍飛影、#7震撼人心已退出改圖；#1沙井之友急再出＋外檔變數；#11一檔可攪局",
+            "coldBets": [
+              "冷獨/位 #11/#1",
+              "連贏 6-11、6-1",
+              "三重彩軸6腳11/1/8"
+            ]
+          }
         },
         {
           "no": "5",
