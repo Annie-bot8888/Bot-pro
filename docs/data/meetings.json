@@ -228,21 +228,121 @@
       "venue": "跑馬地夜賽",
       "type": "local",
       "bettable": "本地賽事",
-      "status": "待更新",
+      "status": "第1場已預測",
       "races": [
         {
           "no": "1",
-          "name": "待定",
-          "top3": []
+          "name": "南風讓賽",
+          "postTimeHkt": "18:40",
+          "distance": "1650米",
+          "track": "草地 C／好地",
+          "note": "預測已出",
+          "top3": [
+            {
+              "rank": 1,
+              "number": 3,
+              "nameZh": "神駒馬靈",
+              "nameEn": "Soaring Bronco"
+            },
+            {
+              "rank": 2,
+              "number": 11,
+              "nameZh": "東方魅影",
+              "nameEn": "Oriental Surprise"
+            },
+            {
+              "rank": 3,
+              "number": 8,
+              "nameZh": "電訊驕陽",
+              "nameEn": "Telecom Power"
+            }
+          ],
+          "predictedAt": "2026-09-23 18:17 HKT",
+          "brief": {
+            "bets": [
+              "獨贏/位置 #3",
+              "連贏/位置Q 3-11、3-8",
+              "三重彩 3-11-8 匣"
+            ],
+            "confidence": "中高",
+            "reasons": [
+              "#3 近績 5/3/3/2/1，轉投廖房後穩定上名；今檔4、初戴眼罩，路程適性佳",
+              "#11 潘頓、檔3、負119；近績常季軍亞軍，位置線穩但港未開齋",
+              "#8 近績穩定，袁幸堯減10磅增程1650，盤口有值"
+            ],
+            "risks": "五班混戰；#6 開心三多外檔要位、#4 紅磚戰士內檔變數；#11 長期未贏或成位置馬"
+          }
         },
         {
           "no": "2",
-          "name": "待定",
+          "name": "深水灣讓賽",
+          "postTimeHkt": "19:10",
+          "distance": "1200米",
+          "track": "草地",
+          "note": "排位已出",
           "top3": []
         },
         {
           "no": "3",
-          "name": "待定",
+          "name": "黃竹坑讓賽",
+          "postTimeHkt": "19:40",
+          "distance": "1650米",
+          "track": "草地",
+          "note": "排位已出",
+          "top3": []
+        },
+        {
+          "no": "4",
+          "name": "深水灣讓賽",
+          "postTimeHkt": "20:10",
+          "distance": "1200米",
+          "track": "草地",
+          "note": "排位已出",
+          "top3": []
+        },
+        {
+          "no": "5",
+          "name": "香港鄉村俱樂部挑戰盃（讓賽）",
+          "postTimeHkt": "20:40",
+          "distance": "1650米",
+          "track": "草地",
+          "note": "排位已出",
+          "top3": []
+        },
+        {
+          "no": "6",
+          "name": "香島讓賽",
+          "postTimeHkt": "21:10",
+          "distance": "1000米",
+          "track": "草地",
+          "note": "排位已出",
+          "top3": []
+        },
+        {
+          "no": "7",
+          "name": "畢拿山讓賽",
+          "postTimeHkt": "21:45",
+          "distance": "1200米",
+          "track": "草地",
+          "note": "排位已出",
+          "top3": []
+        },
+        {
+          "no": "8",
+          "name": "畢拿山讓賽",
+          "postTimeHkt": "22:15",
+          "distance": "1200米",
+          "track": "草地",
+          "note": "排位已出",
+          "top3": []
+        },
+        {
+          "no": "9",
+          "name": "大坑讓賽",
+          "postTimeHkt": "22:50",
+          "distance": "1800米",
+          "track": "草地",
+          "note": "排位已出",
           "top3": []
         }
       ]
@@ -285,5 +385,5 @@
       "type": "local"
     }
   ],
-  "updatedAt": "2026-09-19 19:00"
+  "updatedAt": "2026-09-23 18:20"
 }
