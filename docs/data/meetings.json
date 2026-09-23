@@ -228,7 +228,7 @@
       "venue": "跑馬地夜賽",
       "type": "local",
       "bettable": "本地賽事",
-      "status": "第3場已完／第4場已預測",
+      "status": "第4場已完／第5場已預測",
       "races": [
         {
           "no": "1",
@@ -510,7 +510,7 @@
           "postTimeHkt": "20:10",
           "distance": "1200米",
           "track": "草地 C／好地",
-          "note": "預測已出",
+          "note": "賽果（已完）",
           "top3": [
             {
               "rank": 1,
@@ -576,16 +576,106 @@
               "連贏 6-11、6-1",
               "三重彩軸6腳11/1/8"
             ]
-          }
+          },
+          "resulted": true,
+          "result": [
+            {
+              "rank": 1,
+              "number": 4,
+              "nameZh": "星辰千帥",
+              "nameEn": "BROWNNEEDSFURTHER",
+              "winOdds": 10.3
+            },
+            {
+              "rank": 2,
+              "number": 6,
+              "nameZh": "快樂神駒",
+              "nameEn": "CLOUD NINE",
+              "winOdds": null
+            },
+            {
+              "rank": 3,
+              "number": 1,
+              "nameZh": "沙井之友",
+              "nameEn": "FRIENDS OF SHAJING",
+              "winOdds": null
+            }
+          ]
         },
         {
           "no": "5",
           "name": "香港鄉村俱樂部挑戰盃（讓賽）",
           "postTimeHkt": "20:40",
           "distance": "1650米",
-          "track": "草地",
-          "note": "排位已出",
-          "top3": []
+          "track": "草地 C／好地",
+          "note": "預測已出",
+          "top3": [
+            {
+              "rank": 1,
+              "number": 5,
+              "nameZh": "創科群英",
+              "nameEn": "Inno Super",
+              "winOdds": 4.8
+            },
+            {
+              "rank": 2,
+              "number": 6,
+              "nameZh": "越駿聯歡",
+              "nameEn": "Happy Smile",
+              "winOdds": 5.3
+            },
+            {
+              "rank": 3,
+              "number": 7,
+              "nameZh": "滿洛城",
+              "nameEn": "Dashing Maurison",
+              "winOdds": 7.7
+            }
+          ],
+          "resulted": false,
+          "cold3": [
+            {
+              "rank": 1,
+              "number": 3,
+              "nameZh": "大學生",
+              "nameEn": "Ivy League",
+              "winOdds": 9.0
+            },
+            {
+              "rank": 2,
+              "number": 4,
+              "nameZh": "赤風驪",
+              "nameEn": "Vermilion Tempest",
+              "winOdds": 12
+            },
+            {
+              "rank": 3,
+              "number": 8,
+              "nameZh": "金駒永騰",
+              "nameEn": "Luck Is Back",
+              "winOdds": 11
+            }
+          ],
+          "predictedAt": "2026-09-23 20:22 HKT",
+          "brief": {
+            "bets": [
+              "獨贏/位置 #5",
+              "連贏/位置Q 5-6、5-7",
+              "三重彩 5為軸配 6/7/3（可加#4）"
+            ],
+            "confidence": "中（散盤開放）",
+            "reasons": [
+              "#5創科群英 近績3/3/6/6/8/1；上仗谷草1650第三（熱身後再同程），往績同程曾勝（2月檔1），今檔3＋周俊樂減2負126，所期跟前／中間位有力轉勝；貼士指數最佳、獨贏約4.8，Flame／Standard均有捧",
+              "#6越駿聯歡 近績3/6/5/6；出道未勝但場場有獎金，初戰谷草1650殺入季席；今檔6梁家俊負124，所期再跟步入位；賠率約5.3次熱、貼士指數次席",
+              "#7滿洛城 近績6/2/1/9/6/6；重返四班後取勝＋亞（谷草1650／1800適性佳），今檔7班德禮負123戴B，所期中前位爭位置；Flame亦點名不可輕視"
+            ],
+            "risks": "散盤無絕對大熱；#9爆竹上季末領放勝但檔11吃虧；#3大學生一檔＋減分重戴鼻箍可反彈攪局；#4赤風驪低檔Standard首選但中文貼士較淡；步速若慢可能利前領",
+            "coldBets": [
+              "冷獨/位 #3/#4/#8",
+              "連贏 5-3、5-4",
+              "三重彩軸5腳3/4/8"
+            ]
+          }
         },
         {
           "no": "6",
@@ -623,7 +713,8 @@
           "note": "排位已出",
           "top3": []
         }
-      ]
+      ],
+      "updatedAt": "2026-09-23 20:22 HKT"
     }
   ],
   "calendarDays": [
