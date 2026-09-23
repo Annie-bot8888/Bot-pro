@@ -228,7 +228,7 @@
       "venue": "跑馬地夜賽",
       "type": "local",
       "bettable": "本地賽事",
-      "status": "第8場已完／第9場已預測",
+      "status": "全日完（第9場已完）",
       "races": [
         {
           "no": "1",
@@ -935,7 +935,7 @@
           "postTimeHkt": "22:50",
           "distance": "1800米",
           "track": "草地 C／好地",
-          "note": "預測已出",
+          "note": "賽果（已完）",
           "top3": [
             {
               "rank": 1,
@@ -1002,10 +1002,33 @@
             ]
           },
           "predictedAt": "2026-09-23 22:35 HKT",
-          "resulted": false
+          "resulted": true,
+          "result": [
+            {
+              "rank": 1,
+              "number": 6,
+              "nameZh": "將義",
+              "nameEn": "Fortunate Son",
+              "winOdds": 11
+            },
+            {
+              "rank": 2,
+              "number": 5,
+              "nameZh": "好實力",
+              "nameEn": "Fivefortwo",
+              "winOdds": 24
+            },
+            {
+              "rank": 3,
+              "number": 2,
+              "nameZh": "紫荊傳令",
+              "nameEn": "Seraph Gabriel",
+              "winOdds": 4.4
+            }
+          ]
         }
       ],
-      "updatedAt": "2026-09-23 22:35 HKT"
+      "updatedAt": "2026-09-23 23:27 HKT"
     }
   ],
   "calendarDays": [
@@ -1045,5 +1068,5 @@
       "type": "local"
     }
   ],
-  "updatedAt": "2026-09-23 22:35 HKT"
+  "updatedAt": "2026-09-23 23:27 HKT"
 }
