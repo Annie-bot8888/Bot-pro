@@ -228,7 +228,7 @@
       "venue": "跑馬地夜賽",
       "type": "local",
       "bettable": "本地賽事",
-      "status": "第6場已完／第7場已預測",
+      "status": "第8場已完／第9場已預測",
       "races": [
         {
           "no": "1",
@@ -804,7 +804,7 @@
           "postTimeHkt": "21:45",
           "distance": "1200米",
           "track": "草地 C／好地",
-          "note": "預測已出",
+          "note": "賽果（已完）",
           "top3": [
             {
               "rank": 1,
@@ -828,7 +828,7 @@
               "winOdds": 3.8
             }
           ],
-          "resulted": false,
+          "resulted": true,
           "predictedAt": "2026-09-23 21:33 HKT",
           "cold3": [
             {
@@ -871,28 +871,141 @@
               "連贏 1-12、3-12",
               "三重彩軸1腳12/2/9"
             ]
-          }
+          },
+          "result": [
+            {
+              "rank": 1,
+              "number": 11,
+              "nameZh": "盈妍威楓",
+              "nameEn": "PRESTIGE ALWAYS",
+              "winOdds": 8.1
+            },
+            {
+              "rank": 2,
+              "number": 12,
+              "nameZh": "丞匡掠影",
+              "nameEn": "DARYL FLASH",
+              "winOdds": 3.5
+            },
+            {
+              "rank": 3,
+              "number": 8,
+              "nameZh": "首飾悟空",
+              "nameEn": "WUKONG JEWELLERY",
+              "winOdds": 5.9
+            }
+          ]
         },
         {
           "no": "8",
           "name": "畢拿山讓賽",
           "postTimeHkt": "22:15",
           "distance": "1200米",
-          "track": "草地",
-          "note": "排位已出",
-          "top3": []
+          "track": "草地 C／好地",
+          "note": "賽果（已完）",
+          "top3": [],
+          "result": [
+            {
+              "rank": 1,
+              "number": 8,
+              "nameZh": "繼往開來",
+              "nameEn": "DANICA'S CHOICE",
+              "winOdds": 2.0
+            },
+            {
+              "rank": 2,
+              "number": 11,
+              "nameZh": "驕陽雄心",
+              "nameEn": "LEADING AGILITY",
+              "winOdds": 6.5
+            },
+            {
+              "rank": 3,
+              "number": 6,
+              "nameZh": "富國兄弟",
+              "nameEn": "THRIVING BROTHERS",
+              "winOdds": 22
+            }
+          ],
+          "resulted": true
         },
         {
           "no": "9",
           "name": "大坑讓賽",
           "postTimeHkt": "22:50",
           "distance": "1800米",
-          "track": "草地",
-          "note": "排位已出",
-          "top3": []
+          "track": "草地 C／好地",
+          "note": "預測已出",
+          "top3": [
+            {
+              "rank": 1,
+              "number": 10,
+              "nameZh": "風將",
+              "nameEn": "Windlord",
+              "winOdds": 5.4
+            },
+            {
+              "rank": 2,
+              "number": 2,
+              "nameZh": "紫荊傳令",
+              "nameEn": "Seraph Gabriel",
+              "winOdds": 2.8
+            },
+            {
+              "rank": 3,
+              "number": 1,
+              "nameZh": "嘉應傳承",
+              "nameEn": "Ka Ying Generation",
+              "winOdds": 8.1
+            }
+          ],
+          "cold3": [
+            {
+              "rank": 1,
+              "number": 6,
+              "nameZh": "將義",
+              "nameEn": "Fortunate Son",
+              "winOdds": 11
+            },
+            {
+              "rank": 2,
+              "number": 9,
+              "nameZh": "中國心",
+              "nameEn": "China Win",
+              "winOdds": 8.4
+            },
+            {
+              "rank": 3,
+              "number": 3,
+              "nameZh": "凌登",
+              "nameEn": "Without Compare",
+              "winOdds": 16
+            }
+          ],
+          "brief": {
+            "bets": [
+              "獨贏/位置 #10",
+              "連贏/位置Q 10-2、10-1",
+              "三重彩 10為軸配 2/1/6"
+            ],
+            "confidence": "中（貼士捧#10、市場捧#2）",
+            "reasons": [
+              "#10風將 近績2/9/13/7/10/7；轉投告東尼首仗谷草1650檔12仍亞軍（獨贏12），直線受阻仍追近；今檔10外疊但輕磅122蔡明紹續配，所期中後位覆上爭勝；賽日貼士指數最佳（3.9）、獨贏約5.4",
+              "#2紫荊傳令 近績4/7/5/12/2/11；打吡第五＋上季末沙田1800外疊第四，試閘回勇首戰跑馬地，潘頓重配負135檔5；所期中間位首次谷草衝關；市場大熱約2.8、賽日貼士指數5.3",
+              "#1嘉應傳承 近績5/7/2/3/7/7；上季多跑二班／分組賽今落三班，檔1谷草1800地利＋艾兆禮負135；所期貼欄跟前／中間位反彈爭位；賽日貼士指數第三（6.2）、獨贏約8.1"
+            ],
+            "risks": "#2大熱壓縮賠率且首戰跑馬地未證適性；#10檔10谷草1800起步吃虧；#6將義上仗同班勝出評分+6盤口約11可攪；#9中國心上仗季席但檔11；#7浪漫鬥士貼士指數99／市場淡倉",
+            "coldBets": [
+              "冷獨/位 #6/#9/#3",
+              "連贏 10-6、2-6",
+              "三重彩軸10腳6/9/3"
+            ]
+          },
+          "predictedAt": "2026-09-23 22:35 HKT",
+          "resulted": false
         }
       ],
-      "updatedAt": "2026-09-23 21:33 HKT"
+      "updatedAt": "2026-09-23 22:35 HKT"
     }
   ],
   "calendarDays": [
@@ -932,5 +1045,5 @@
       "type": "local"
     }
   ],
-  "updatedAt": "2026-09-23 21:33 HKT"
+  "updatedAt": "2026-09-23 22:35 HKT"
 }
