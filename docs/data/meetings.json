@@ -228,7 +228,7 @@
       "venue": "跑馬地夜賽",
       "type": "local",
       "bettable": "本地賽事",
-      "status": "第1場已完／第2場已預測",
+      "status": "第2場已完／第3場已預測",
       "races": [
         {
           "no": "1",
@@ -306,7 +306,7 @@
           "postTimeHkt": "19:10",
           "distance": "1200米",
           "track": "草地 C／好地",
-          "note": "預測已出",
+          "note": "賽果（已完）",
           "top3": [
             {
               "rank": 1,
@@ -344,16 +344,77 @@
               "#7 一檔搶位、黃智弘減3磅；早段速度快，C欄1200有利控速入位"
             ],
             "risks": "四班1200混戰；#9開心五月盤口熱門（上仗同場季軍）內欄爭勝；#3路路勁領放後乏力，步速變數大"
-          }
+          },
+          "resulted": true,
+          "result": [
+            {
+              "rank": 1,
+              "number": 10,
+              "nameZh": "比特星",
+              "nameEn": "BITS SUPERSTAR",
+              "winOdds": 6.3
+            },
+            {
+              "rank": 2,
+              "number": 11,
+              "nameZh": "有盈勇士",
+              "nameEn": "LEGEND STAR",
+              "winOdds": 20
+            },
+            {
+              "rank": 3,
+              "number": 8,
+              "nameZh": "鄉村威龍",
+              "nameEn": "COUNTRY PRIDE",
+              "winOdds": 12
+            }
+          ]
         },
         {
           "no": "3",
           "name": "黃竹坑讓賽",
           "postTimeHkt": "19:40",
           "distance": "1650米",
-          "track": "草地",
-          "note": "排位已出",
-          "top3": []
+          "track": "草地 C／好地",
+          "note": "預測已出",
+          "top3": [
+            {
+              "rank": 1,
+              "number": 5,
+              "nameZh": "凝妙星",
+              "nameEn": "Amazing Gaze",
+              "winOdds": 4.1
+            },
+            {
+              "rank": 2,
+              "number": 2,
+              "nameZh": "贏玥",
+              "nameEn": "Shooting To Top",
+              "winOdds": 5.4
+            },
+            {
+              "rank": 3,
+              "number": 8,
+              "nameZh": "蹺妙",
+              "nameEn": "Akermanis Gold",
+              "winOdds": 5.2
+            }
+          ],
+          "predictedAt": "2026-09-23 19:16 HKT",
+          "brief": {
+            "bets": [
+              "獨贏/位置 #5",
+              "連贏/位置Q 5-2、5-8",
+              "三重彩 5-2-8 匣（可加#7）"
+            ],
+            "confidence": "中高",
+            "reasons": [
+              "#5 近績1/6/6/6/8/3；今季初出同程谷草1650一勝開齋；檔3奧爾民，路程適性已證，所期再爭連捷（評分+8為主要顧慮）",
+              "#2 近績6/2/4/5/1/6；上仗大部分途程無遮擋走外疊仍有跑；今潘頓、檔7（與之前勝仗同檔），磅勢穩定，今仗預期可覓更佳走勢",
+              "#8 近績5/9/6/9/6/9；上季末同程外檔閃入第五屬個人最佳；今檔2＋周俊樂減2磅、評分-4，試閘理想，步速圖有利貼欄"
+            ],
+            "risks": "四班1650混戰；#5 升8分後連捷難度升；#7 有情有義檔4減磅有力攪局；盤口#5/#2/#8 接近，冷門#9內欄變數"
+          }
         },
         {
           "no": "4",
@@ -449,5 +510,5 @@
       "type": "local"
     }
   ],
-  "updatedAt": "2026-09-23 18:55"
+  "updatedAt": "2026-09-23 19:16"
 }
