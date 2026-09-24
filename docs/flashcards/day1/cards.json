@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "kanji": "開",
+    "readings": { "on": "カイ", "kun": "あく・あける・ひらく" },
+    "meaning_zh_hk": "開、打開",
+    "meaning_en": "open",
+    "example": "開ける（あける）— 打開",
+    "image": "images/kanji_01_kai.png"
+  },
+  {
+    "id": 2,
+    "kanji": "閉",
+    "readings": { "on": "ヘイ", "kun": "とじる・しまる・しめる" },
+    "meaning_zh_hk": "關、關閉",
+    "meaning_en": "close",
+    "example": "閉じる（とじる）— 關上",
+    "image": "images/kanji_02_hei.png"
+  },
+  {
+    "id": 3,
+    "kanji": "働",
+    "readings": { "on": "ドウ", "kun": "はたらく" },
+    "meaning_zh_hk": "工作、勞動",
+    "meaning_en": "work",
+    "example": "働く（はたらく）— 返工／工作",
+    "image": "images/kanji_03_dou.png"
+  },
+  {
+    "id": 4,
+    "kanji": "休",
+    "readings": { "on": "キュウ", "kun": "やすむ・やすみ" },
+    "meaning_zh_hk": "休息、放假",
+    "meaning_en": "rest",
+    "example": "休む（やすむ）— 休息",
+    "image": "images/kanji_04_kyuu.png"
+  },
+  {
+    "id": 5,
+    "kanji": "急",
+    "readings": { "on": "キュウ", "kun": "いそぐ・急（きゅう）" },
+    "meaning_zh_hk": "急、匆忙",
+    "meaning_en": "hurry",
+    "example": "急ぐ（いそぐ）— 趕時間",
+    "image": "images/kanji_05_kyuu.png"
+  },
+  {
+    "id": 6,
+    "kanji": "遅",
+    "readings": { "on": "チ", "kun": "おそい・おくれる" },
+    "meaning_zh_hk": "遲、遲到",
+    "meaning_en": "late",
+    "example": "遅れる（おくれる）— 遲到",
+    "image": "images/kanji_06_chi.png"
+  },
+  {
+    "id": 7,
+    "kanji": "通",
+    "readings": { "on": "ツウ", "kun": "とおる・かよう" },
+    "meaning_zh_hk": "通過、通勤",
+    "meaning_en": "commute / pass",
+    "example": "通勤（つうきん）— 返工路上",
+    "image": "images/kanji_07_tsuu.png"
+  },
+  {
+    "id": 8,
+    "kanji": "駅",
+    "readings": { "on": "エキ", "kun": "—" },
+    "meaning_zh_hk": "車站",
+    "meaning_en": "station",
+    "example": "駅（えき）— 車站",
+    "image": "images/kanji_08_eki.png"
+  },
+  {
+    "id": 9,
+    "kanji": "乗",
+    "readings": { "on": "ジョウ", "kun": "のる・のせる" },
+    "meaning_zh_hk": "乘、搭車",
+    "meaning_en": "ride / board",
+    "example": "乗る（のる）— 搭車",
+    "image": "images/kanji_09_jou.png"
+  },
+  {
+    "id": 10,
+    "kanji": "降",
+    "readings": { "on": "コウ", "kun": "おりる・ふる" },
+    "meaning_zh_hk": "落、落車",
+    "meaning_en": "get off",
+    "example": "降りる（おりる）— 落車",
+    "image": "images/kanji_10_kou.png"
+  },
+  {
+    "id": 11,
+    "kanji": "買",
+    "readings": { "on": "バイ", "kun": "かう" },
+    "meaning_zh_hk": "買",
+    "meaning_en": "buy",
+    "example": "買う（かう）— 買嘢",
+    "image": "images/kanji_11_bai.png"
+  },
+  {
+    "id": 12,
+    "kanji": "売",
+    "readings": { "on": "バイ", "kun": "うる・うれる" },
+    "meaning_zh_hk": "賣",
+    "meaning_en": "sell",
+    "example": "売る（うる）— 賣嘢",
+    "image": "images/kanji_12_bai.png"
+  },
+  {
+    "id": 13,
+    "kanji": "払",
+    "readings": { "on": "フツ", "kun": "はらう" },
+    "meaning_zh_hk": "畀錢、支付",
+    "meaning_en": "pay",
+    "example": "払う（はらう）— 付錢",
+    "image": "images/kanji_13_futsu.png"
+  },
+  {
+    "id": 14,
+    "kanji": "貸",
+    "readings": { "on": "タイ", "kun": "かす" },
+    "meaning_zh_hk": "借出、借俾人",
+    "meaning_en": "lend",
+    "example": "貸す（かす）— 借俾人",
+    "image": "images/kanji_14_tai.png"
+  },
+  {
+    "id": 15,
+    "kanji": "借",
+    "readings": { "on": "シャク", "kun": "かりる" },
+    "meaning_zh_hk": "借入、向人借",
+    "meaning_en": "borrow",
+    "example": "借りる（かりる）— 向人借",
+    "image": "images/kanji_15_shaku.png"
+  },
+  {
+    "id": 16,
+    "kanji": "薬",
+    "readings": { "on": "ヤク", "kun": "くすり" },
+    "meaning_zh_hk": "藥",
+    "meaning_en": "medicine",
+    "example": "薬（くすり）— 藥",
+    "image": "images/kanji_16_yaku.png"
+  },
+  {
+    "id": 17,
+    "kanji": "病",
+    "readings": { "on": "ビョウ", "kun": "やまい・やむ" },
+    "meaning_zh_hk": "病、疾病",
+    "meaning_en": "illness",
+    "example": "病院（びょういん）— 醫院",
+    "image": "images/kanji_17_byou.png"
+  },
+  {
+    "id": 18,
+    "kanji": "館",
+    "readings": { "on": "カン", "kun": "—" },
+    "meaning_zh_hk": "館（圖書館／博物館）",
+    "meaning_en": "hall / building",
+    "example": "図書館（としょかん）— 圖書館",
+    "image": "images/kanji_18_kan.png"
+  },
+  {
+    "id": 19,
+    "kanji": "約",
+    "readings": { "on": "ヤク", "kun": "—" },
+    "meaning_zh_hk": "約定、約會",
+    "meaning_en": "promise / appointment",
+    "example": "約束（やくそく）— 約定",
+    "image": "images/kanji_19_yaku.png"
+  },
+  {
+    "id": 20,
+    "kanji": "会",
+    "readings": { "on": "カイ", "kun": "あう" },
+    "meaning_zh_hk": "會見、見面",
+    "meaning_en": "meet",
+    "example": "会う（あう）— 見面",
+    "image": "images/kanji_20_kai.png"
+  }
+]
