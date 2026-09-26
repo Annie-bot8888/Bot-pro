@@ -1036,7 +1036,7 @@
       "venue": "澳洲玫瑰崗 · 金玫瑰錦標日",
       "type": "overseas",
       "bettable": "馬會可投（S1）",
-      "status": "進行中（R1–R7 賽果已入；S1-8～S1-9 預測已出）",
+      "status": "進行中（R1–R8 賽果已入；S1-9 預測已出）",
       "races": [
         {
           "no": "S1-1",
@@ -1420,8 +1420,8 @@
           "postTimeHkt": "14:05",
           "distance": "1400米",
           "track": "草地／Good 4（Racing Australia）",
-          "note": "預測已出",
-          "resulted": false,
+          "note": "賽果（已完）",
+          "resulted": true,
           "predictedAt": "2026-09-26 13:32 HKT",
           "top3": [
             {
@@ -1491,7 +1491,31 @@
               "races.com.au (Lucy Henderson 23 Sep): Guest House fav ~$2.50; St Gotthard ~$3.30; Warwoven each-way ~$6.50; best roughie Stormy Marco ~$31",
               "Before You Bet (Shannon Buckley 25 Sep): Guest House / St Gotthard / Plagiarism roughie"
             ]
-          }
+          },
+          "result": [
+            {
+              "rank": 1,
+              "number": 4,
+              "nameZh": "Warwoven",
+              "nameEn": "Warwoven",
+              "winOdds": 6.0
+            },
+            {
+              "rank": 2,
+              "number": 5,
+              "nameZh": "St Gotthard",
+              "nameEn": "St Gotthard",
+              "winOdds": 3.7
+            },
+            {
+              "rank": 3,
+              "number": 9,
+              "nameZh": "Under Focus",
+              "nameEn": "Under Focus",
+              "winOdds": 12.0
+            }
+          ],
+          "resultedAt": "2026-09-26 14:32 HKT"
         },
         {
           "no": "S1-9",
@@ -1574,7 +1598,7 @@
           }
         }
       ],
-      "updatedAt": "2026-09-26 14:12 HKT"
+      "updatedAt": "2026-09-26 14:35 HKT"
     }
   ],
   "calendarDays": [
@@ -1612,7 +1636,7 @@
       "date": "2026-09-26",
       "label": "海外玫瑰崗",
       "type": "overseas",
-      "status": "進行中（R1–R7 賽果已入；S1-8～S1-9 預測已出）"
+      "status": "進行中（R1–R8 賽果已入；S1-9 預測已出）"
     },
     {
       "date": "2026-09-27",
@@ -1620,5 +1644,5 @@
       "type": "local"
     }
   ],
-  "updatedAt": "2026-09-26 14:12 HKT"
+  "updatedAt": "2026-09-26 14:35 HKT"
 }
