@@ -1036,7 +1036,7 @@
       "venue": "澳洲玫瑰崗 · 金玫瑰錦標日",
       "type": "overseas",
       "bettable": "馬會可投（S1）",
-      "status": "進行中（R1–R5 賽果已入；S1-6 預測已出）",
+      "status": "進行中（R1–R5 賽果已入；S1-6～S1-7 預測已出）",
       "races": [
         {
           "no": "S1-1",
@@ -1289,9 +1289,92 @@
               "GoBet / Neds previews; JustHorseRacing odds ~Blue Door $1.80 / Omolong $4"
             ]
           }
+        },
+        {
+          "no": "S1-7",
+          "name": "Racingandsports.com.au Golden Pendant（G2）",
+          "postTimeHkt": "13:25",
+          "distance": "1400米",
+          "track": "草地／Good 4（Racing Australia）",
+          "note": "預測已出",
+          "resulted": false,
+          "predictedAt": "2026-09-26 12:46 HKT",
+          "top3": [
+            {
+              "rank": 1,
+              "number": 1,
+              "nameZh": "Lazzura",
+              "nameEn": "Lazzura",
+              "winOdds": 2.05
+            },
+            {
+              "rank": 2,
+              "number": 4,
+              "nameZh": "Gangsta Granny",
+              "nameEn": "Gangsta Granny",
+              "winOdds": 5.0
+            },
+            {
+              "rank": 3,
+              "number": 6,
+              "nameZh": "Surfin' Bird",
+              "nameEn": "Surfin' Bird",
+              "winOdds": 4.8
+            }
+          ],
+          "cold3": [
+            {
+              "rank": 1,
+              "number": 3,
+              "nameZh": "Verona Rose",
+              "nameEn": "Verona Rose",
+              "winOdds": 10
+            },
+            {
+              "rank": 2,
+              "number": 5,
+              "nameZh": "Ahha Ahha",
+              "nameEn": "Ahha Ahha",
+              "winOdds": 51
+            },
+            {
+              "rank": 3,
+              "number": 7,
+              "nameZh": "Dark Glitter",
+              "nameEn": "Dark Glitter",
+              "winOdds": 71
+            }
+          ],
+          "brief": {
+            "bets": [
+              "獨贏/位置 #1 Lazzura",
+              "連贏/位置Q 1-4、1-6",
+              "三重彩 1為軸配 4/6/8"
+            ],
+            "confidence": "中高（主流共識捧 #1；小場7匹，#8 市場逼近）",
+            "reasons": [
+              "#1 Lazzura 近績 1155x212x3；春季 Coolmore Classic（G1·1500）勝出，All Aged（G1）亚军後今季 Sheraco（G2·1200）復出第三（距頭馬 Savvy Hallie 約半馬位，末段節拍強）。今檔5＋James McDonald 負58。所期表現：二仗轉強紀錄佳（5:3-0-1），升程1400正合，重地玫瑰崗多番入板；地圖上可跟在 Surfin' Bird／Gangsta Granny 後佔理想中前位。Racing NSW／Before You Bet／JustHorseRacing／races.com.au／SEN AI 一致主推獨贏（約 $2.05–2.15）。",
+              "#4 Gangsta Granny 近績 313x123x62；Missile（G2）復出失準後，Sheraco 跟步緊咬亚军（僅頸位負 Savvy Hallie）。今檔7＋Dylan Gibbons 負55.5，第三仗。所期表現：Hawkes 厩慣例三仗轉旺，前速可控；唯一疑點係未勝超過1200，但近仗末段仍有力度，位置線值博。多數專欄列主要危險／each-way。",
+              "#6 Surfin' Bird 近績 71115x251x；六月 Eagle Farm 1600 掛牌勝後休養，Hawkesbury Crown（G3）復出時亦僅鼻位亞軍。今檔3＋Tim Clark 負54、Waterhouse/Bott。所期表現：試閘理想、新鮮度高，地圖上料領放／控速，小場利前膽；升程1400＋重地處女仗有變數，但步速主動權在手。"
+            ],
+            "risks": "#2 Apocalyptic、#9 Butternut Princess 已刮走，剩7匹；#1 獨贏約2.05偏熱。#8 Modella（Wyong Mona Lisa 後上險勝）市場約$4.5 逼近熱門，後上若遇慢步速吃虧。#3 Verona Rose Theo Marks 第三（Skyhook）外檔再抽不利。路程若變慢利 #6/#4 前領，#1 需靠騎師調節。",
+            "coldBets": [
+              "冷獨/位 #3/#5/#7",
+              "連贏 1-3、1-8",
+              "三重彩軸1腳3/8/7"
+            ],
+            "sources": [
+              "Racing Australia final fields / track Good 4; #2 Apocalyptic & #9 Butternut Princess scratched",
+              "Racing NSW Rosehill preview (Ray Hickson): Lazzura WIN ~$2.10; dangers Modella / Gangsta Granny / Surfin' Bird",
+              "Before You Bet Rosehill tips 26 Sep: Lazzura / Gangsta Granny / Surfin' Bird",
+              "JustHorseRacing Golden Pendant preview: $100 Win Lazzura; map Surfin' Bird lead, Gangsta Granny outside, Lazzura 1-1; odds Lazzura $2.05 / Modella $4.80 / Surfin' Bird $5 / Gangsta Granny $5.50 / Verona Rose $10",
+              "races.com.au (25 Sep): Lazzura fav ~$2.05; each-way Gangsta Granny; value Verona Rose $9.50; Surfin' Bird & Modella ~$4.5–5.5",
+              "RSN/SEN AI (23 Sep): Winner Lazzura; roughie Verona Rose; Top4 1-2-4-3 (note #2 later scratched)"
+            ]
+          }
         }
       ],
-      "updatedAt": "2026-09-26 12:24 HKT"
+      "updatedAt": "2026-09-26 12:46 HKT"
     }
   ],
   "calendarDays": [
@@ -1336,5 +1419,5 @@
       "type": "local"
     }
   ],
-  "updatedAt": "2026-09-26 12:24 HKT"
+  "updatedAt": "2026-09-26 12:46 HKT"
 }
