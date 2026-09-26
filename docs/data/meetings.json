@@ -1036,7 +1036,7 @@
       "venue": "澳洲玫瑰崗 · 金玫瑰錦標日",
       "type": "overseas",
       "bettable": "馬會可投（S1）",
-      "status": "進行中（R1–R8 賽果已入；S1-9 預測已出／賽果未出；S1-10 預測已出）",
+      "status": "進行中（R1–R9 賽果已入；S1-10 預測已出）",
       "races": [
         {
           "no": "S1-1",
@@ -1523,8 +1523,8 @@
           "postTimeHkt": "14:45",
           "distance": "1500米",
           "track": "草地／Good 4（Racing Australia）",
-          "note": "預測已出",
-          "resulted": false,
+          "note": "賽果（已完）",
+          "resulted": true,
           "predictedAt": "2026-09-26 14:12 HKT",
           "top3": [
             {
@@ -1595,7 +1595,31 @@
               "RSN/SEN AI (23 Sep): Winner Skyhook; value Private Eye; roughie Magnatear; Top4 2-1-6-7",
               "Sports News / Pride quote: Private Eye better forward from barrier 3"
             ]
-          }
+          },
+          "result": [
+            {
+              "rank": 1,
+              "number": 2,
+              "nameZh": "Skyhook",
+              "nameEn": "Skyhook",
+              "winOdds": 1.5
+            },
+            {
+              "rank": 2,
+              "number": 3,
+              "nameZh": "Estadio Mestalla",
+              "nameEn": "Estadio Mestalla",
+              "winOdds": 10.0
+            },
+            {
+              "rank": 3,
+              "number": 1,
+              "nameZh": "Private Eye",
+              "nameEn": "Private Eye",
+              "winOdds": 4.8
+            }
+          ],
+          "resultedAt": "2026-09-26 14:59 HKT"
         },
         {
           "no": "S1-10",
@@ -1682,7 +1706,7 @@
           }
         }
       ],
-      "updatedAt": "2026-09-26 14:46 HKT"
+      "updatedAt": "2026-09-26 14:59 HKT"
     }
   ],
   "calendarDays": [
@@ -1720,7 +1744,7 @@
       "date": "2026-09-26",
       "label": "海外玫瑰崗",
       "type": "overseas",
-      "status": "進行中（R1–R8 賽果已入；S1-9 預測已出／賽果未出；S1-10 預測已出）"
+      "status": "進行中（R1–R9 賽果已入；S1-10 預測已出）"
     },
     {
       "date": "2026-09-27",
@@ -1728,5 +1752,5 @@
       "type": "local"
     }
   ],
-  "updatedAt": "2026-09-26 14:46 HKT"
+  "updatedAt": "2026-09-26 14:59 HKT"
 }
