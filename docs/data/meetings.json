@@ -1029,6 +1029,99 @@
         }
       ],
       "updatedAt": "2026-09-23 23:27 HKT"
+    },
+    {
+      "id": "20260926-s1",
+      "date": "2026-09-26",
+      "venue": "澳洲玫瑰崗 · 金玫瑰錦標日",
+      "type": "overseas",
+      "bettable": "馬會可投（S1）",
+      "status": "進行中（S1-6 預測已出）",
+      "races": [
+        {
+          "no": "S1-6",
+          "name": "Grant Burge Heritage Stakes（G3）",
+          "postTimeHkt": "12:50",
+          "distance": "1100米",
+          "track": "草地／Good 4（Racing Australia）",
+          "note": "預測已出",
+          "resulted": false,
+          "predictedAt": "2026-09-26 12:15 HKT",
+          "top3": [
+            {
+              "rank": 1,
+              "number": 1,
+              "nameZh": "Blue Door",
+              "nameEn": "Blue Door",
+              "winOdds": 1.8
+            },
+            {
+              "rank": 2,
+              "number": 3,
+              "nameZh": "Omolong",
+              "nameEn": "Omolong",
+              "winOdds": 4.0
+            },
+            {
+              "rank": 3,
+              "number": 5,
+              "nameZh": "Our Emperor",
+              "nameEn": "Our Emperor",
+              "winOdds": 7.5
+            }
+          ],
+          "cold3": [
+            {
+              "rank": 1,
+              "number": 7,
+              "nameZh": "Ciaron's Star",
+              "nameEn": "Ciaron's Star",
+              "winOdds": 14
+            },
+            {
+              "rank": 2,
+              "number": 2,
+              "nameZh": "Half Pipe",
+              "nameEn": "Half Pipe",
+              "winOdds": 10
+            },
+            {
+              "rank": 3,
+              "number": 4,
+              "nameZh": "Outspan",
+              "nameEn": "Outspan",
+              "winOdds": 18
+            }
+          ],
+          "brief": {
+            "bets": [
+              "獨贏/位置 #1 Blue Door",
+              "連贏/位置Q 1-3、1-5",
+              "三重彩 1為軸配 3/5/7"
+            ],
+            "confidence": "中高（熱門濃；貼士與 SEN AI 略有分歧）",
+            "reasons": [
+              "#1 Blue Door 近績 1x22；復出後兩仗均亞軍，曾交手 Chilly Girl／Guest House 等強敵；今檔6＋Nash Rawiller 負56.5，路程1100適性已證。所期表現：中前位跟步，月餘休息後再衝關。Canberra Times／RSN Miles／GoBet 均捧獨贏；JustHorseRacing 報獨贏約1.8大熱。",
+              "#3 Omolong 近績 11x；兩出兩勝均跑1100（Warwick Farm／Rosehill），週二試閘保狀態；今檔5＋James McDonald 負56。所期表現：後上／中間位再展末段。SEN AI Winner、Neds 主推；與大熱形成貼士分歧值博。",
+              "#5 Our Emperor 近績 1x；5月重地 Warwick Farm 新馬一勝後休養，試閘理想；今檔8＋Tim Clark、Waterhouse/Bott 房。所期表現：新鮮度＋班次跳升有變數，但一勝幅度大，位置線有值。SEN AI best value、Canberra Times 次選提及。"
+            ],
+            "risks": "小場8匹但 #1 獨贏約1.8過熱；SEN AI 捧 #3 與市場大熱分歧。#6 Freshman 無往績（NZ）變數；#7 Ciaron's Star 上季 G2/G3 有跑可冷門攪局；步速若慢利前領 #1。",
+            "coldBets": [
+              "冷獨/位 #7/#2/#4",
+              "連贏 1-7、3-7",
+              "三重彩軸1腳7/2/4"
+            ],
+            "sources": [
+              "Racing Australia final fields / results (Good 4)",
+              "Canberra Times Rosehill tips (24 Sep): Blue Door WIN",
+              "RSN/SEN AI (23 Sep): Winner Omolong; value Our Emperor; roughie Ciaron's Star; Top4 3-1-5-7",
+              "RSN tip sheet: Miles Pfitzner R6 Blue Door",
+              "GoBet / Neds previews; JustHorseRacing odds ~Blue Door $1.80 / Omolong $4"
+            ]
+          }
+        }
+      ],
+      "updatedAt": "2026-09-26 12:15 HKT"
     }
   ],
   "calendarDays": [
@@ -1063,10 +1156,15 @@
       "type": "local"
     },
     {
+      "date": "2026-09-26",
+      "label": "海外玫瑰崗",
+      "type": "overseas"
+    },
+    {
       "date": "2026-09-27",
       "label": "沙田",
       "type": "local"
     }
   ],
-  "updatedAt": "2026-09-23 23:27 HKT"
+  "updatedAt": "2026-09-26 12:15 HKT"
 }
