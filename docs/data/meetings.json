@@ -1036,7 +1036,7 @@
       "venue": "澳洲玫瑰崗 · 金玫瑰錦標日",
       "type": "overseas",
       "bettable": "馬會可投（S1）",
-      "status": "進行中（R1–R8 賽果已入；S1-9 預測已出）",
+      "status": "進行中（R1–R8 賽果已入；S1-9 預測已出／賽果未出；S1-10 預測已出）",
       "races": [
         {
           "no": "S1-1",
@@ -1596,9 +1596,93 @@
               "Sports News / Pride quote: Private Eye better forward from barrier 3"
             ]
           }
+        },
+        {
+          "no": "S1-10",
+          "name": "TAB Handicap（BM78）",
+          "postTimeHkt": "15:25",
+          "distance": "1100米",
+          "track": "草地／Good 4（Racing Australia）",
+          "note": "預測已出",
+          "resulted": false,
+          "predictedAt": "2026-09-26 14:46 HKT",
+          "top3": [
+            {
+              "rank": 1,
+              "number": 15,
+              "nameZh": "Mercy Me",
+              "nameEn": "Mercy Me",
+              "winOdds": 4.0
+            },
+            {
+              "rank": 2,
+              "number": 2,
+              "nameZh": "Kimberley Secrets",
+              "nameEn": "Kimberley Secrets",
+              "winOdds": 4.2
+            },
+            {
+              "rank": 3,
+              "number": 11,
+              "nameZh": "Annie's Rose",
+              "nameEn": "Annie's Rose",
+              "winOdds": 5.5
+            }
+          ],
+          "cold3": [
+            {
+              "rank": 1,
+              "number": 9,
+              "nameZh": "Banjora",
+              "nameEn": "Banjora",
+              "winOdds": 12
+            },
+            {
+              "rank": 2,
+              "number": 14,
+              "nameZh": "Jasmin Rouge",
+              "nameEn": "Jasmin Rouge",
+              "winOdds": 15
+            },
+            {
+              "rank": 3,
+              "number": 1,
+              "nameZh": "Farnicle",
+              "nameEn": "Farnicle",
+              "winOdds": 9.0
+            }
+          ],
+          "brief": {
+            "bets": [
+              "獨贏/位置 #15 Mercy Me",
+              "連贏/位置Q 15-2、15-11",
+              "三重彩 15為軸配 2/11/9",
+              "冷獨/位 #9/#14/#1",
+              "連贏 15-9、2-9"
+            ],
+            "confidence": "中（大場 BM78 意見分散；#15/#2 較多共識，獨贏無極熱）",
+            "reasons": [
+              "#15 Mercy Me 近績 5x2111x20x；上季 Denise’s Joy 亞軍顯示班次，休賽前一仗可淡出。試閘跟 Skyhook 跑第三，今檔6＋Regan Bayliss 負56。所期表現：1100 利前膽／中前，可搶位控速；Racing NSW（Ray Hickson）主推獨贏約 $3.80–4.20。",
+              "#2 Kimberley Secrets 近績 22212x2522；今季四仗三亞，末仗 Randwick 跟步僅負 Ernaux。今檔1＋Coriah Keatings 減3 負約56。所期表現：內檔必爭前位，Rosehill 1100 步速圖有利；JustHorseRacing／Racing NSW 同列危險（約 $4.20–8.50）。",
+              "#11 Annie's Rose 近績 18x9410x17；復出同類班次擊敗 Kimberley Secrets，再上 Randwick 1200 後段不弱。今檔3＋Reece Jones 負57。所期表現：返本場本程、檔位佳，可中前位硬咬；JustHorseRacing 點名（約 $5.50–11）。"
+            ],
+            "risks": "場大（原定16＋後備），#7/#13 等或刮／後備#17–21（含 #18 Street Artist）入場會改盤口同步速。#1 Farnicle 休一年負頂磅61，SEN AI 捧但首輪風險高。#14 Jasmin Rouge 外檔＋McDonald 騎，賠率若拉長先作冷線。步速若太快，後上型（#18 若跑）可攪局。",
+            "coldBets": [
+              "冷獨/位 #9/#14/#1",
+              "連贏 15-9、2-9",
+              "三重彩軸15腳9/14/1"
+            ],
+            "sources": [
+              "Racing Australia final fields Rosehill 26 Sep 2026 R10 TAB Handicap BM78 1100m; track Good 4, rail True",
+              "Racing NSW preview (Ray Hickson): Mercy Me WIN ~$3.80–4.20; dangers Kimberley Secrets, Annie's Rose, Farnicle",
+              "JustHorseRacing (Adam Page 26 Sep): Annie's Rose ~$5.50; Kimberley Secrets ~$4.20; long shot Lulumon ~$17; earlier sheet also Street Artist (18e) ~$4.60",
+              "RSN/SEN AI (23 Sep): Winner Farnicle; value Kimberley Secrets; roughie Jasmin Rouge; Top4 1-2-14-8",
+              "David Gately (theGreatTipOff): Best each-way Race 10 #9 Banjora"
+            ]
+          }
         }
       ],
-      "updatedAt": "2026-09-26 14:35 HKT"
+      "updatedAt": "2026-09-26 14:46 HKT"
     }
   ],
   "calendarDays": [
@@ -1636,7 +1720,7 @@
       "date": "2026-09-26",
       "label": "海外玫瑰崗",
       "type": "overseas",
-      "status": "進行中（R1–R8 賽果已入；S1-9 預測已出）"
+      "status": "進行中（R1–R8 賽果已入；S1-9 預測已出／賽果未出；S1-10 預測已出）"
     },
     {
       "date": "2026-09-27",
@@ -1644,5 +1728,5 @@
       "type": "local"
     }
   ],
-  "updatedAt": "2026-09-26 14:35 HKT"
+  "updatedAt": "2026-09-26 14:46 HKT"
 }
