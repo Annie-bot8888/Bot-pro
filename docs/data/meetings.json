@@ -1036,7 +1036,7 @@
       "venue": "澳洲玫瑰崗 · 金玫瑰錦標日",
       "type": "overseas",
       "bettable": "馬會可投（S1）",
-      "status": "進行中（R1–R5 賽果已入；S1-6～S1-7 預測已出）",
+      "status": "進行中（R1–R6 賽果已入；S1-7 預測已出）",
       "races": [
         {
           "no": "S1-1",
@@ -1214,8 +1214,8 @@
           "postTimeHkt": "12:50",
           "distance": "1100米",
           "track": "草地／Good 4（Racing Australia）",
-          "note": "預測已出",
-          "resulted": false,
+          "note": "賽果（已完）",
+          "resulted": true,
           "predictedAt": "2026-09-26 12:15 HKT",
           "top3": [
             {
@@ -1288,7 +1288,30 @@
               "RSN tip sheet: Miles Pfitzner R6 Blue Door",
               "GoBet / Neds previews; JustHorseRacing odds ~Blue Door $1.80 / Omolong $4"
             ]
-          }
+          },
+          "result": [
+            {
+              "rank": 1,
+              "number": 1,
+              "nameZh": "Blue Door",
+              "nameEn": "Blue Door",
+              "winOdds": 1.85
+            },
+            {
+              "rank": 2,
+              "number": 7,
+              "nameZh": "Ciaron's Star",
+              "nameEn": "Ciaron's Star",
+              "winOdds": 14
+            },
+            {
+              "rank": 3,
+              "number": 4,
+              "nameZh": "Outspan",
+              "nameEn": "Outspan",
+              "winOdds": 18
+            }
+          ]
         },
         {
           "no": "S1-7",
@@ -1374,7 +1397,7 @@
           }
         }
       ],
-      "updatedAt": "2026-09-26 12:46 HKT"
+      "updatedAt": "2026-09-26 13:10 HKT"
     }
   ],
   "calendarDays": [
@@ -1411,7 +1434,8 @@
     {
       "date": "2026-09-26",
       "label": "海外玫瑰崗",
-      "type": "overseas"
+      "type": "overseas",
+      "status": "進行中（R1–R6 賽果已入；S1-7 預測已出）"
     },
     {
       "date": "2026-09-27",
@@ -1419,5 +1443,5 @@
       "type": "local"
     }
   ],
-  "updatedAt": "2026-09-26 12:46 HKT"
+  "updatedAt": "2026-09-26 13:10 HKT"
 }
