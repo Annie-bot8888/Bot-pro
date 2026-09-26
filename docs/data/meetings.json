@@ -1036,7 +1036,7 @@
       "venue": "澳洲玫瑰崗 · 金玫瑰錦標日",
       "type": "overseas",
       "bettable": "馬會可投（S1）",
-      "status": "進行中（R1–R6 賽果已入；S1-7 預測已出）",
+      "status": "進行中（R1–R6 賽果已入；S1-7／S1-8 預測已出）",
       "races": [
         {
           "no": "S1-1",
@@ -1395,9 +1395,90 @@
               "RSN/SEN AI (23 Sep): Winner Lazzura; roughie Verona Rose; Top4 1-2-4-3 (note #2 later scratched)"
             ]
           }
+        },
+        {
+          "no": "S1-8",
+          "name": "Yulong Golden Rose（G1）",
+          "postTimeHkt": "14:05",
+          "distance": "1400米",
+          "track": "草地／Good 4（Racing Australia）",
+          "note": "預測已出",
+          "resulted": false,
+          "predictedAt": "2026-09-26 13:32 HKT",
+          "top3": [
+            {
+              "rank": 1,
+              "number": 1,
+              "nameZh": "Guest House",
+              "nameEn": "Guest House",
+              "winOdds": 2.5
+            },
+            {
+              "rank": 2,
+              "number": 5,
+              "nameZh": "St Gotthard",
+              "nameEn": "St Gotthard",
+              "winOdds": 3.3
+            },
+            {
+              "rank": 3,
+              "number": 4,
+              "nameZh": "Warwoven",
+              "nameEn": "Warwoven",
+              "winOdds": 6.5
+            }
+          ],
+          "cold3": [
+            {
+              "rank": 1,
+              "number": 9,
+              "nameZh": "Under Focus",
+              "nameEn": "Under Focus",
+              "winOdds": 11
+            },
+            {
+              "rank": 2,
+              "number": 8,
+              "nameZh": "Stormy Marco",
+              "nameEn": "Stormy Marco",
+              "winOdds": 31
+            },
+            {
+              "rank": 3,
+              "number": 11,
+              "nameZh": "Plagiarism",
+              "nameEn": "Plagiarism",
+              "winOdds": 81
+            }
+          ],
+          "brief": {
+            "bets": [
+              "獨贏/位置 #1 Guest House",
+              "連贏/位置Q 1-5、1-4",
+              "三重彩 1為軸配 5/4/9"
+            ],
+            "confidence": "中高（主流共識捧 #1；升程1400係最大變數）",
+            "reasons": [
+              "#1 Guest House 近績 1231x1；秋季金拖鞋冠軍，復出玫瑰崗 San Domenico（G3·1100）破場紀錄贏 #1 Blue Door（1.3馬位），Zac Lloyd 續騎、檔5。所期表現：重地未敗、二仗轉程1400係疑點，但上仗受困仍展末段，地圖可佔中前位；JustHorseRacing／races.com.au／Before You Bet 一致主推（約 $2.50–2.60）。",
+              "#5 St Gotthard 近績 11x2；兩歲兩戰兩勝後，Run To The Rose（G2·1200）復出僅頸位負 Warwoven。今檔9＋James McDonald 負56.5、Waller 房。所期表現：上仗末段仍強，加程200米利；多數專欄列次熱／主要危險（約 $3.30–4.00）。",
+              "#4 Warwoven 近績 11416x51；San Domenico 第五後，Run To The Rose 跟步勝出（頸位壓 St Gotthard）。今檔1＋Rachel King 負56.5。所期表現：內檔理想、第三仗轉旺，重地兩勝四戰；位置／each-way 值（約 $6–6.50）。races.com.au 點名 each-way danger。"
+            ],
+            "risks": "#12 Castillo King 已刮，剩12匹。#1 獨贏約2.5偏熱，1400處女程係最大風險。步速若被 #11 Plagiarism（檔3）領慢，後上型吃虧；外檔 #3 Tron Bolt／#8 Stormy Marco／#10 Central Europe 需好運。Waller 多馬分票。",
+            "coldBets": [
+              "冷獨/位 #9/#8/#11",
+              "連贏 1-9、5-9",
+              "三重彩軸1腳9/8/3"
+            ],
+            "sources": [
+              "Racing Australia final fields Rosehill 26 Sep 2026 R8; track Good 4, rail True; #12 Castillo King scratched (races.com.au)",
+              "JustHorseRacing (Adam Page 26 Sep): Guest House WIN ~$2.50; danger St Gotthard; long shot Cormier; Next Best Guest House",
+              "races.com.au (Lucy Henderson 23 Sep): Guest House fav ~$2.50; St Gotthard ~$3.30; Warwoven each-way ~$6.50; best roughie Stormy Marco ~$31",
+              "Before You Bet (Shannon Buckley 25 Sep): Guest House / St Gotthard / Plagiarism roughie"
+            ]
+          }
         }
       ],
-      "updatedAt": "2026-09-26 13:10 HKT"
+      "updatedAt": "2026-09-26 13:32 HKT"
     }
   ],
   "calendarDays": [
@@ -1435,7 +1516,7 @@
       "date": "2026-09-26",
       "label": "海外玫瑰崗",
       "type": "overseas",
-      "status": "進行中（R1–R6 賽果已入；S1-7 預測已出）"
+      "status": "進行中（R1–R6 賽果已入；S1-7／S1-8 預測已出）"
     },
     {
       "date": "2026-09-27",
@@ -1443,5 +1524,5 @@
       "type": "local"
     }
   ],
-  "updatedAt": "2026-09-26 13:10 HKT"
+  "updatedAt": "2026-09-26 13:32 HKT"
 }
