@@ -1036,8 +1036,178 @@
       "venue": "澳洲玫瑰崗 · 金玫瑰錦標日",
       "type": "overseas",
       "bettable": "馬會可投（S1）",
-      "status": "進行中（S1-6 預測已出）",
+      "status": "進行中（R1–R5 賽果已入；S1-6 預測已出）",
       "races": [
+        {
+          "no": "S1-1",
+          "name": "Midway Handicap",
+          "postTimeHkt": "09:55",
+          "distance": "1300米",
+          "track": "草地／Good 4（Racing Australia interim）",
+          "note": "賽果（已完）",
+          "resulted": true,
+          "top3": [],
+          "cold3": [],
+          "result": [
+            {
+              "rank": 1,
+              "number": 14,
+              "nameZh": "Call Me Sassy",
+              "nameEn": "Call Me Sassy",
+              "winOdds": 5.5
+            },
+            {
+              "rank": 2,
+              "number": 2,
+              "nameZh": "Miss Spacegirl",
+              "nameEn": "Miss Spacegirl",
+              "winOdds": 7.0
+            },
+            {
+              "rank": 3,
+              "number": 15,
+              "nameZh": "Vexxy",
+              "nameEn": "Vexxy",
+              "winOdds": 13.0
+            }
+          ]
+        },
+        {
+          "no": "S1-2",
+          "name": "TAB Highway Handicap",
+          "postTimeHkt": "10:30",
+          "distance": "1500米",
+          "track": "草地／Good 4（Racing Australia interim）",
+          "note": "賽果（已完）",
+          "resulted": true,
+          "top3": [],
+          "cold3": [],
+          "result": [
+            {
+              "rank": 1,
+              "number": 5,
+              "nameZh": "Bluish Hue",
+              "nameEn": "Bluish Hue",
+              "winOdds": 2.7
+            },
+            {
+              "rank": 2,
+              "number": 4,
+              "nameZh": "Whateley",
+              "nameEn": "Whateley",
+              "winOdds": 17.0
+            },
+            {
+              "rank": 3,
+              "number": 3,
+              "nameZh": "Xtreme",
+              "nameEn": "Xtreme",
+              "winOdds": 7.5
+            }
+          ]
+        },
+        {
+          "no": "S1-3",
+          "name": "Asahi Super Dry Colin Stephen Quality（G3）",
+          "postTimeHkt": "11:05",
+          "distance": "2400米",
+          "track": "草地／Good 4（Racing Australia interim）",
+          "note": "賽果（已完）",
+          "resulted": true,
+          "top3": [],
+          "cold3": [],
+          "result": [
+            {
+              "rank": 1,
+              "number": 1,
+              "nameZh": "So You Are",
+              "nameEn": "So You Are",
+              "winOdds": 2.15
+            },
+            {
+              "rank": 2,
+              "number": 4,
+              "nameZh": "Amplify",
+              "nameEn": "Amplify",
+              "winOdds": 7.0
+            },
+            {
+              "rank": 3,
+              "number": 2,
+              "nameZh": "Bella Montagna",
+              "nameEn": "Bella Montagna",
+              "winOdds": 3.0
+            }
+          ]
+        },
+        {
+          "no": "S1-4",
+          "name": "Toyota Forklifts Handicap",
+          "postTimeHkt": "11:40",
+          "distance": "1900米",
+          "track": "草地／Good 4（Racing Australia interim）",
+          "note": "賽果（已完）",
+          "resulted": true,
+          "top3": [],
+          "cold3": [],
+          "result": [
+            {
+              "rank": 1,
+              "number": 6,
+              "nameZh": "Pinhole",
+              "nameEn": "Pinhole",
+              "winOdds": 12.0
+            },
+            {
+              "rank": 2,
+              "number": 3,
+              "nameZh": "Starzintheireyes",
+              "nameEn": "Starzintheireyes",
+              "winOdds": 1.9
+            },
+            {
+              "rank": 3,
+              "number": 10,
+              "nameZh": "Anthracite",
+              "nameEn": "Anthracite",
+              "winOdds": 7.0
+            }
+          ]
+        },
+        {
+          "no": "S1-5",
+          "name": "Irresistible Pools & Spas Handicap",
+          "postTimeHkt": "12:15",
+          "distance": "1400米",
+          "track": "草地／Good 4（Racing Australia interim）",
+          "note": "賽果（已完）",
+          "resulted": true,
+          "top3": [],
+          "cold3": [],
+          "result": [
+            {
+              "rank": 1,
+              "number": 6,
+              "nameZh": "Decorum",
+              "nameEn": "Decorum",
+              "winOdds": 1.8
+            },
+            {
+              "rank": 2,
+              "number": 3,
+              "nameZh": "Cross Tasman",
+              "nameEn": "Cross Tasman",
+              "winOdds": 3.9
+            },
+            {
+              "rank": 3,
+              "number": 11,
+              "nameZh": "Ruination",
+              "nameEn": "Ruination",
+              "winOdds": 7.5
+            }
+          ]
+        },
         {
           "no": "S1-6",
           "name": "Grant Burge Heritage Stakes（G3）",
@@ -1121,7 +1291,7 @@
           }
         }
       ],
-      "updatedAt": "2026-09-26 12:15 HKT"
+      "updatedAt": "2026-09-26 12:24 HKT"
     }
   ],
   "calendarDays": [
@@ -1166,5 +1336,5 @@
       "type": "local"
     }
   ],
-  "updatedAt": "2026-09-26 12:15 HKT"
+  "updatedAt": "2026-09-26 12:24 HKT"
 }
