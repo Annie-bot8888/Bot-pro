@@ -1753,7 +1753,7 @@ function renderRaceBlock(race) {
       </header>
       <div class="race-compare">
         <div class="compare-col tip-col">
-          <div class="section-label">熱門</div>
+          <div class="section-label">建議組合（熱門＋冷門）</div>
           ${tipBody}
         </div>
         <div class="compare-col cold-col">
