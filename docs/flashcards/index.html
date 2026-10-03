@@ -96,7 +96,21 @@
   .day-card .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 20px; }
   .day-actions { display: flex; flex-direction: column; gap: 10px; }
   .day-actions .btn { width: 100%; padding: 14px; font-size: 1.05rem; }
-  .coming { margin-top: 16px; color: var(--muted); font-size: 0.85rem; }
+  .day-switch {
+    display: flex; flex-wrap: wrap; gap: 6px; justify-content: center;
+    margin: 2px 0 16px;
+  }
+  .day-switch button {
+    border: none; cursor: pointer; font: inherit; font-weight: 700;
+    padding: 8px 12px; border-radius: 999px;
+    background: rgba(255,255,255,0.92); color: var(--text);
+    box-shadow: var(--shadow); font-size: 0.85rem;
+  }
+  .day-switch button.active {
+    background: linear-gradient(135deg, #ff8fab, #ffa8c5);
+    color: #fff;
+  }
+  .day-chip { font-size: 0.85rem; }
 
   /* Study */
   .study-top {
@@ -239,14 +253,14 @@
   <!-- HOME -->
   <section id="view-home">
     <div class="day-card">
-      <span class="day-badge">今日</span>
-      <h2>Day 1 · 日常生活</h2>
-      <p class="meta">20 個漢字 · 開關・通勤・買賣・健康</p>
+      <span class="day-badge" id="weekBadge">Week 1 · 第一週</span>
+      <div class="day-switch" id="daySwitch" role="group" aria-label="選擇日子"></div>
+      <h2 id="dayTitle">Day 1 · 日常生活</h2>
+      <p class="meta" id="dayMeta">20 個漢字 · 開關・通勤・買賣・健康</p>
       <div class="day-actions">
         <button type="button" class="btn btn-primary" id="btnStartStudy">📖 開始翻卡</button>
         <button type="button" class="btn btn-accent" id="btnStartTest">✏️ 今日小測</button>
       </div>
-      <p class="coming">Day 2、Day 3 … 稍後加入</p>
     </div>
   </section>
 
@@ -255,7 +269,7 @@
     <div class="study-top">
       <button type="button" class="btn btn-ghost" id="btnStudyHome">← 主頁</button>
       <span class="counter" id="cardCounter">1 / 20</span>
-      <span style="width:64px"></span>
+      <span class="counter day-chip" id="studyDayChip">Day 1</span>
     </div>
     <div class="flip-scene">
       <div class="flip-card" id="flipCard" tabindex="0" role="button" aria-label="撳一下翻卡">
@@ -275,17 +289,18 @@
     <div class="study-top">
       <button type="button" class="btn btn-ghost" id="btnTestHome">← 主頁</button>
       <span class="counter" id="testCounter">題 1 / 10</span>
-      <span style="width:64px"></span>
+      <span class="counter day-chip" id="testDayChip">Day 1</span>
     </div>
     <div class="test-progress"><div class="bar" id="testBar"></div></div>
     <div id="testArea"></div>
   </section>
 
-  <footer class="note">離線可用 · 資料喺 day1/ · 讀音：音読み／訓読み</footer>
+  <footer class="note">Week 1 · 第一週 · Day 1–7 · 音読み／訓読み</footer>
 </div>
 
 <script>
-const DAY_PATH = "day1/";
+let week = null;
+let dayInfo = null;
 let cards = [];
 let idx = 0;
 let flipped = false;
@@ -294,9 +309,37 @@ let testI = 0;
 let testScore = 0;
 let testAnswers = [];
 
-async function loadCards() {
-  const res = await fetch(DAY_PATH + "cards.json");
+async function loadWeek() {
+  const res = await fetch("week.json");
+  if (!res.ok) throw new Error("week.json");
+  week = await res.json();
+  const box = document.getElementById("daySwitch");
+  box.innerHTML = week.days.map(d =>
+    `<button type="button" data-day="${d.id}">Day ${d.id}</button>`
+  ).join("");
+  box.onclick = (e) => {
+    const b = e.target.closest("button[data-day]");
+    if (!b) return;
+    selectDay(Number(b.dataset.day));
+  };
+  await selectDay(week.days[0].id);
+}
+
+async function selectDay(id) {
+  dayInfo = week.days.find(d => d.id === id);
+  document.querySelectorAll("#daySwitch button").forEach(b => {
+    b.classList.toggle("active", Number(b.dataset.day) === id);
+  });
+  document.getElementById("weekBadge").textContent = `${week.label} · ${week.label_zh}`;
+  document.getElementById("dayTitle").textContent = `Day ${dayInfo.id} · ${dayInfo.title}`;
+  document.getElementById("dayMeta").textContent = dayInfo.meta;
+  document.getElementById("studyDayChip").textContent = `Day ${dayInfo.id}`;
+  document.getElementById("testDayChip").textContent = `Day ${dayInfo.id}`;
+  const res = await fetch(dayInfo.path + "cards.json");
+  if (!res.ok) throw new Error(dayInfo.path + "cards.json");
   cards = await res.json();
+  idx = 0;
+  flipped = false;
 }
 
 function showView(name) {
@@ -309,7 +352,7 @@ function showView(name) {
 }
 
 function imgSrc(c) {
-  return DAY_PATH + c.image;
+  return dayInfo.path + c.image;
 }
 
 function renderCard() {
@@ -535,7 +578,7 @@ function renderResult() {
   const area = document.getElementById("testArea");
   area.innerHTML = `
     <div class="q-card result-card">
-      <h2>今日小測結果</h2>
+      <h2>Day ${dayInfo.id} · 小測結果</h2>
       <div class="score-big">${testScore} / ${testQ.length}</div>
       <p>${testScore === testQ.length ? "完美！太叻啦 🎉" : testScore >= 7 ? "唔錯呀，繼續加油 💪" : "再翻卡溫習吓啦 📖"}</p>
       ${wrongs.length ? `
@@ -563,15 +606,20 @@ function renderResult() {
 }
 
 /* ---- wire up ---- */
+function openStudy() {
+  if (!cards.length) return;
+  showView("study");
+  renderCard();
+}
 document.getElementById("mainNav").addEventListener("click", e => {
   const b = e.target.closest("button[data-view]");
   if (!b) return;
-  if (b.dataset.view === "study") { showView("study"); renderCard(); }
-  else if (b.dataset.view === "test") startTest();
+  if (b.dataset.view === "study") openStudy();
+  else if (b.dataset.view === "test") { if (cards.length) startTest(); }
   else showView("home");
 });
-document.getElementById("btnStartStudy").onclick = () => { showView("study"); renderCard(); };
-document.getElementById("btnStartTest").onclick = startTest;
+document.getElementById("btnStartStudy").onclick = openStudy;
+document.getElementById("btnStartTest").onclick = () => { if (cards.length) startTest(); };
 document.getElementById("btnStudyHome").onclick = () => showView("home");
 document.getElementById("btnTestHome").onclick = () => showView("home");
 document.getElementById("btnFlip").onclick = flip;
@@ -589,11 +637,11 @@ document.addEventListener("keydown", e => {
   else if (e.key === " " || e.key === "Enter") { e.preventDefault(); flip(); }
 });
 
-loadCards().then(() => {
-  console.log("Loaded", cards.length, "cards");
+loadWeek().then(() => {
+  console.log("Loaded", week.days.length, "days");
 }).catch(err => {
   document.getElementById("view-home").innerHTML =
-    `<div class="day-card"><p>載入失敗：請用本地伺服器開啟，或確認 day1/cards.json 存在。<br>${err}</p></div>`;
+    `<div class="day-card"><p>載入失敗：請用本地伺服器開啟，或確認 week.json 同各日 cards.json 存在。<br>${err}</p></div>`;
 });
 </script>
 </body>

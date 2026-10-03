@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "kanji": "車",
+    "readings": {
+      "on": "シャ",
+      "kun": "くるま"
+    },
+    "meaning_zh_hk": "車",
+    "meaning_en": "car",
+    "example": "車（くるま）— 車",
+    "image": "images/kanji_01_sha.png"
+  },
+  {
+    "id": 2,
+    "kanji": "道",
+    "readings": {
+      "on": "ドウ",
+      "kun": "みち"
+    },
+    "meaning_zh_hk": "路",
+    "meaning_en": "road",
+    "example": "道（みち）— 路",
+    "image": "images/kanji_02_dou.png"
+  },
+  {
+    "id": 3,
+    "kanji": "歩",
+    "readings": {
+      "on": "ホ・ブ",
+      "kun": "あるく"
+    },
+    "meaning_zh_hk": "行",
+    "meaning_en": "walk",
+    "example": "歩く（あるく）— 行路",
+    "image": "images/kanji_03_ho.png"
+  },
+  {
+    "id": 4,
+    "kanji": "走",
+    "readings": {
+      "on": "ソウ",
+      "kun": "はしる"
+    },
+    "meaning_zh_hk": "跑",
+    "meaning_en": "run",
+    "example": "走る（はしる）— 跑",
+    "image": "images/kanji_04_sou_hashi.png"
+  },
+  {
+    "id": 5,
+    "kanji": "着",
+    "readings": {
+      "on": "チャク",
+      "kun": "つく・きる"
+    },
+    "meaning_zh_hk": "到達、穿",
+    "meaning_en": "arrive / wear",
+    "example": "着く（つく）— 到達",
+    "image": "images/kanji_05_chaku.png"
+  },
+  {
+    "id": 6,
+    "kanji": "送",
+    "readings": {
+      "on": "ソウ",
+      "kun": "おくる"
+    },
+    "meaning_zh_hk": "送",
+    "meaning_en": "send / see off",
+    "example": "送る（おくる）— 送",
+    "image": "images/kanji_06_okuru.png"
+  },
+  {
+    "id": 7,
+    "kanji": "迎",
+    "readings": {
+      "on": "ゲイ",
+      "kun": "むかえる"
+    },
+    "meaning_zh_hk": "接",
+    "meaning_en": "welcome",
+    "example": "迎える（むかえる）— 接",
+    "image": "images/kanji_07_gei.png"
+  },
+  {
+    "id": 8,
+    "kanji": "運",
+    "readings": {
+      "on": "ウン",
+      "kun": "はこぶ"
+    },
+    "meaning_zh_hk": "搬運",
+    "meaning_en": "carry",
+    "example": "運ぶ（はこぶ）— 搬",
+    "image": "images/kanji_08_un.png"
+  },
+  {
+    "id": 9,
+    "kanji": "転",
+    "readings": {
+      "on": "テン",
+      "kun": "ころぶ"
+    },
+    "meaning_zh_hk": "轉、單車",
+    "meaning_en": "turn / roll",
+    "example": "自転車（じてんしゃ）— 單車",
+    "image": "images/kanji_09_ten_koro.png"
+  },
+  {
+    "id": 10,
+    "kanji": "止",
+    "readings": {
+      "on": "シ",
+      "kun": "とまる・とめる"
+    },
+    "meaning_zh_hk": "停",
+    "meaning_en": "stop",
+    "example": "止まる（とまる）— 停低",
+    "image": "images/kanji_10_shi_to.png"
+  },
+  {
+    "id": 11,
+    "kanji": "右",
+    "readings": {
+      "on": "ウ・ユウ",
+      "kun": "みぎ"
+    },
+    "meaning_zh_hk": "右",
+    "meaning_en": "right",
+    "example": "右（みぎ）— 右邊",
+    "image": "images/kanji_11_u.png"
+  },
+  {
+    "id": 12,
+    "kanji": "左",
+    "readings": {
+      "on": "サ",
+      "kun": "ひだり"
+    },
+    "meaning_zh_hk": "左",
+    "meaning_en": "left",
+    "example": "左（ひだり）— 左邊",
+    "image": "images/kanji_12_sa.png"
+  },
+  {
+    "id": 13,
+    "kanji": "前",
+    "readings": {
+      "on": "ゼン",
+      "kun": "まえ"
+    },
+    "meaning_zh_hk": "前",
+    "meaning_en": "front",
+    "example": "前（まえ）— 前面",
+    "image": "images/kanji_13_zen.png"
+  },
+  {
+    "id": 14,
+    "kanji": "後",
+    "readings": {
+      "on": "ゴ・コウ",
+      "kun": "あと・うしろ"
+    },
+    "meaning_zh_hk": "後",
+    "meaning_en": "after / behind",
+    "example": "後ろ（うしろ）— 後面",
+    "image": "images/kanji_14_go.png"
+  },
+  {
+    "id": 15,
+    "kanji": "近",
+    "readings": {
+      "on": "キン",
+      "kun": "ちかい"
+    },
+    "meaning_zh_hk": "近",
+    "meaning_en": "near",
+    "example": "近い（ちかい）— 近",
+    "image": "images/kanji_15_kin.png"
+  },
+  {
+    "id": 16,
+    "kanji": "遠",
+    "readings": {
+      "on": "エン・オン",
+      "kun": "とおい"
+    },
+    "meaning_zh_hk": "遠",
+    "meaning_en": "far",
+    "example": "遠い（とおい）— 遠",
+    "image": "images/kanji_16_en_too.png"
+  },
+  {
+    "id": 17,
+    "kanji": "橋",
+    "readings": {
+      "on": "キョウ",
+      "kun": "はし"
+    },
+    "meaning_zh_hk": "橋",
+    "meaning_en": "bridge",
+    "example": "橋（はし）— 橋",
+    "image": "images/kanji_17_kyou.png"
+  },
+  {
+    "id": 18,
+    "kanji": "港",
+    "readings": {
+      "on": "コウ",
+      "kun": "みなと"
+    },
+    "meaning_zh_hk": "港口",
+    "meaning_en": "port",
+    "example": "港（みなと）— 港口",
+    "image": "images/kanji_18_kou.png"
+  },
+  {
+    "id": 19,
+    "kanji": "船",
+    "readings": {
+      "on": "セン",
+      "kun": "ふね"
+    },
+    "meaning_zh_hk": "船",
+    "meaning_en": "ship",
+    "example": "船（ふね）— 船",
+    "image": "images/kanji_19_sen_fune.png"
+  },
+  {
+    "id": 20,
+    "kanji": "飛",
+    "readings": {
+      "on": "ヒ",
+      "kun": "とぶ"
+    },
+    "meaning_zh_hk": "飛",
+    "meaning_en": "fly",
+    "example": "飛ぶ（とぶ）— 飛",
+    "image": "images/kanji_20_hi_tobu.png"
+  }
+]

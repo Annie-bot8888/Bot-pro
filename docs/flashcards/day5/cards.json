@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "kanji": "時",
+    "readings": {
+      "on": "ジ",
+      "kun": "とき"
+    },
+    "meaning_zh_hk": "時間",
+    "meaning_en": "time",
+    "example": "時間（じかん）— 時間",
+    "image": "images/kanji_01_ji.png"
+  },
+  {
+    "id": 2,
+    "kanji": "間",
+    "readings": {
+      "on": "カン・ケン",
+      "kun": "あいだ・ま"
+    },
+    "meaning_zh_hk": "之間",
+    "meaning_en": "interval",
+    "example": "間（あいだ）— 之間",
+    "image": "images/kanji_02_kan_aida.png"
+  },
+  {
+    "id": 3,
+    "kanji": "分",
+    "readings": {
+      "on": "フン・ブン",
+      "kun": "わける・わかる"
+    },
+    "meaning_zh_hk": "分鐘、分開",
+    "meaning_en": "minute / part",
+    "example": "五分（ごふん）— 五分鐘",
+    "image": "images/kanji_03_fun.png"
+  },
+  {
+    "id": 4,
+    "kanji": "今",
+    "readings": {
+      "on": "コン",
+      "kun": "いま"
+    },
+    "meaning_zh_hk": "而家",
+    "meaning_en": "now",
+    "example": "今（いま）— 而家",
+    "image": "images/kanji_04_kon.png"
+  },
+  {
+    "id": 5,
+    "kanji": "朝",
+    "readings": {
+      "on": "チョウ",
+      "kun": "あさ"
+    },
+    "meaning_zh_hk": "朝早",
+    "meaning_en": "morning",
+    "example": "朝（あさ）— 朝早",
+    "image": "images/kanji_05_chou.png"
+  },
+  {
+    "id": 6,
+    "kanji": "昼",
+    "readings": {
+      "on": "チュウ",
+      "kun": "ひる"
+    },
+    "meaning_zh_hk": "中午",
+    "meaning_en": "noon",
+    "example": "昼（ひる）— 中午",
+    "image": "images/kanji_06_chuu_hiru.png"
+  },
+  {
+    "id": 7,
+    "kanji": "夜",
+    "readings": {
+      "on": "ヤ",
+      "kun": "よる"
+    },
+    "meaning_zh_hk": "夜晚",
+    "meaning_en": "night",
+    "example": "夜（よる）— 夜晚",
+    "image": "images/kanji_07_ya_yoru.png"
+  },
+  {
+    "id": 8,
+    "kanji": "週",
+    "readings": {
+      "on": "シュウ",
+      "kun": "—"
+    },
+    "meaning_zh_hk": "星期",
+    "meaning_en": "week",
+    "example": "今週（こんしゅう）— 今個星期",
+    "image": "images/kanji_08_shuu.png"
+  },
+  {
+    "id": 9,
+    "kanji": "曜",
+    "readings": {
+      "on": "ヨウ",
+      "kun": "—"
+    },
+    "meaning_zh_hk": "星期幾",
+    "meaning_en": "day of week",
+    "example": "曜日（ようび）— 星期",
+    "image": "images/kanji_09_you.png"
+  },
+  {
+    "id": 10,
+    "kanji": "年",
+    "readings": {
+      "on": "ネン",
+      "kun": "とし"
+    },
+    "meaning_zh_hk": "年",
+    "meaning_en": "year",
+    "example": "来年（らいねん）— 明年",
+    "image": "images/kanji_10_nen.png"
+  },
+  {
+    "id": 11,
+    "kanji": "月",
+    "readings": {
+      "on": "ゲツ・ガツ",
+      "kun": "つき"
+    },
+    "meaning_zh_hk": "月",
+    "meaning_en": "month / moon",
+    "example": "月（つき）— 月亮",
+    "image": "images/kanji_11_getsu.png"
+  },
+  {
+    "id": 12,
+    "kanji": "日",
+    "readings": {
+      "on": "ニチ・ジツ",
+      "kun": "ひ・か"
+    },
+    "meaning_zh_hk": "日",
+    "meaning_en": "day / sun",
+    "example": "日曜日（にちようび）— 星期日",
+    "image": "images/kanji_12_nichi.png"
+  },
+  {
+    "id": 13,
+    "kanji": "春",
+    "readings": {
+      "on": "シュン",
+      "kun": "はる"
+    },
+    "meaning_zh_hk": "春天",
+    "meaning_en": "spring",
+    "example": "春（はる）— 春天",
+    "image": "images/kanji_13_shun.png"
+  },
+  {
+    "id": 14,
+    "kanji": "夏",
+    "readings": {
+      "on": "カ・ゲ",
+      "kun": "なつ"
+    },
+    "meaning_zh_hk": "夏天",
+    "meaning_en": "summer",
+    "example": "夏（なつ）— 夏天",
+    "image": "images/kanji_14_ka_natsu.png"
+  },
+  {
+    "id": 15,
+    "kanji": "秋",
+    "readings": {
+      "on": "シュウ",
+      "kun": "あき"
+    },
+    "meaning_zh_hk": "秋天",
+    "meaning_en": "autumn",
+    "example": "秋（あき）— 秋天",
+    "image": "images/kanji_15_shuu_aki.png"
+  },
+  {
+    "id": 16,
+    "kanji": "冬",
+    "readings": {
+      "on": "トウ",
+      "kun": "ふゆ"
+    },
+    "meaning_zh_hk": "冬天",
+    "meaning_en": "winter",
+    "example": "冬（ふゆ）— 冬天",
+    "image": "images/kanji_16_tou.png"
+  },
+  {
+    "id": 17,
+    "kanji": "雨",
+    "readings": {
+      "on": "ウ",
+      "kun": "あめ"
+    },
+    "meaning_zh_hk": "雨",
+    "meaning_en": "rain",
+    "example": "雨（あめ）— 雨",
+    "image": "images/kanji_17_u_ame.png"
+  },
+  {
+    "id": 18,
+    "kanji": "風",
+    "readings": {
+      "on": "フウ・フ",
+      "kun": "かぜ"
+    },
+    "meaning_zh_hk": "風",
+    "meaning_en": "wind",
+    "example": "風（かぜ）— 風",
+    "image": "images/kanji_18_fuu.png"
+  },
+  {
+    "id": 19,
+    "kanji": "晴",
+    "readings": {
+      "on": "セイ",
+      "kun": "はれる"
+    },
+    "meaning_zh_hk": "放晴",
+    "meaning_en": "clear sky",
+    "example": "晴れる（はれる）— 放晴",
+    "image": "images/kanji_19_sei.png"
+  },
+  {
+    "id": 20,
+    "kanji": "暑",
+    "readings": {
+      "on": "ショ",
+      "kun": "あつい"
+    },
+    "meaning_zh_hk": "熱（天氣）",
+    "meaning_en": "hot weather",
+    "example": "暑い（あつい）— 好熱",
+    "image": "images/kanji_20_sho.png"
+  }
+]

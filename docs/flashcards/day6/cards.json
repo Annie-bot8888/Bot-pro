@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "kanji": "人",
+    "readings": {
+      "on": "ジン・ニン",
+      "kun": "ひと"
+    },
+    "meaning_zh_hk": "人",
+    "meaning_en": "person",
+    "example": "人（ひと）— 人",
+    "image": "images/kanji_01_jin.png"
+  },
+  {
+    "id": 2,
+    "kanji": "友",
+    "readings": {
+      "on": "ユウ",
+      "kun": "とも"
+    },
+    "meaning_zh_hk": "朋友",
+    "meaning_en": "friend",
+    "example": "友達（ともだち）— 朋友",
+    "image": "images/kanji_02_yuu.png"
+  },
+  {
+    "id": 3,
+    "kanji": "親",
+    "readings": {
+      "on": "シン",
+      "kun": "おや・したしい"
+    },
+    "meaning_zh_hk": "父母、親近",
+    "meaning_en": "parent",
+    "example": "親（おや）— 父母",
+    "image": "images/kanji_03_shin_oya.png"
+  },
+  {
+    "id": 4,
+    "kanji": "族",
+    "readings": {
+      "on": "ゾク",
+      "kun": "—"
+    },
+    "meaning_zh_hk": "家族",
+    "meaning_en": "family / tribe",
+    "example": "家族（かぞく）— 屋企人",
+    "image": "images/kanji_04_zoku.png"
+  },
+  {
+    "id": 5,
+    "kanji": "彼",
+    "readings": {
+      "on": "ヒ",
+      "kun": "かれ"
+    },
+    "meaning_zh_hk": "佢（男）",
+    "meaning_en": "he / boyfriend",
+    "example": "彼（かれ）— 佢",
+    "image": "images/kanji_05_hi_kare.png"
+  },
+  {
+    "id": 6,
+    "kanji": "女",
+    "readings": {
+      "on": "ジョ・ニョ",
+      "kun": "おんな"
+    },
+    "meaning_zh_hk": "女",
+    "meaning_en": "woman",
+    "example": "女（おんな）— 女",
+    "image": "images/kanji_06_jo.png"
+  },
+  {
+    "id": 7,
+    "kanji": "男",
+    "readings": {
+      "on": "ダン・ナン",
+      "kun": "おとこ"
+    },
+    "meaning_zh_hk": "男",
+    "meaning_en": "man",
+    "example": "男（おとこ）— 男",
+    "image": "images/kanji_07_dan.png"
+  },
+  {
+    "id": 8,
+    "kanji": "子",
+    "readings": {
+      "on": "シ・ス",
+      "kun": "こ"
+    },
+    "meaning_zh_hk": "小朋友",
+    "meaning_en": "child",
+    "example": "子供（こども）— 小朋友",
+    "image": "images/kanji_08_shi_ko.png"
+  },
+  {
+    "id": 9,
+    "kanji": "私",
+    "readings": {
+      "on": "シ",
+      "kun": "わたし"
+    },
+    "meaning_zh_hk": "我",
+    "meaning_en": "I",
+    "example": "私（わたし）— 我",
+    "image": "images/kanji_09_shi_wata.png"
+  },
+  {
+    "id": 10,
+    "kanji": "好",
+    "readings": {
+      "on": "コウ",
+      "kun": "すき・このむ"
+    },
+    "meaning_zh_hk": "鍾意",
+    "meaning_en": "like",
+    "example": "好き（すき）— 鍾意",
+    "image": "images/kanji_10_kou_su.png"
+  },
+  {
+    "id": 11,
+    "kanji": "嫌",
+    "readings": {
+      "on": "ケン・ゲン",
+      "kun": "きらう・いや"
+    },
+    "meaning_zh_hk": "唔鍾意",
+    "meaning_en": "dislike",
+    "example": "嫌い（きらい）— 唔鍾意",
+    "image": "images/kanji_11_ken_iya.png"
+  },
+  {
+    "id": 12,
+    "kanji": "楽",
+    "readings": {
+      "on": "ラク・ガク",
+      "kun": "たのしい"
+    },
+    "meaning_zh_hk": "開心、音樂",
+    "meaning_en": "fun / music",
+    "example": "楽しい（たのしい）— 開心",
+    "image": "images/kanji_12_raku.png"
+  },
+  {
+    "id": 13,
+    "kanji": "悲",
+    "readings": {
+      "on": "ヒ",
+      "kun": "かなしい"
+    },
+    "meaning_zh_hk": "傷心",
+    "meaning_en": "sad",
+    "example": "悲しい（かなしい）— 傷心",
+    "image": "images/kanji_13_hi_kana.png"
+  },
+  {
+    "id": 14,
+    "kanji": "怒",
+    "readings": {
+      "on": "ド",
+      "kun": "おこる"
+    },
+    "meaning_zh_hk": "嬲",
+    "meaning_en": "angry",
+    "example": "怒る（おこる）— 嬲",
+    "image": "images/kanji_14_do.png"
+  },
+  {
+    "id": 15,
+    "kanji": "笑",
+    "readings": {
+      "on": "ショウ",
+      "kun": "わらう"
+    },
+    "meaning_zh_hk": "笑",
+    "meaning_en": "laugh",
+    "example": "笑う（わらう）— 笑",
+    "image": "images/kanji_15_shou.png"
+  },
+  {
+    "id": 16,
+    "kanji": "泣",
+    "readings": {
+      "on": "キュウ",
+      "kun": "なく"
+    },
+    "meaning_zh_hk": "喊",
+    "meaning_en": "cry",
+    "example": "泣く（なく）— 喊",
+    "image": "images/kanji_16_kyuu.png"
+  },
+  {
+    "id": 17,
+    "kanji": "心",
+    "readings": {
+      "on": "シン",
+      "kun": "こころ"
+    },
+    "meaning_zh_hk": "心",
+    "meaning_en": "heart",
+    "example": "心（こころ）— 心",
+    "image": "images/kanji_17_kokoro.png"
+  },
+  {
+    "id": 18,
+    "kanji": "思",
+    "readings": {
+      "on": "シ",
+      "kun": "おもう"
+    },
+    "meaning_zh_hk": "諗",
+    "meaning_en": "think",
+    "example": "思う（おもう）— 諗",
+    "image": "images/kanji_18_shi_omo.png"
+  },
+  {
+    "id": 19,
+    "kanji": "知",
+    "readings": {
+      "on": "チ",
+      "kun": "しる"
+    },
+    "meaning_zh_hk": "知道",
+    "meaning_en": "know",
+    "example": "知る（しる）— 知道",
+    "image": "images/kanji_19_chi.png"
+  },
+  {
+    "id": 20,
+    "kanji": "話",
+    "readings": {
+      "on": "ワ",
+      "kun": "はなす"
+    },
+    "meaning_zh_hk": "講嘢",
+    "meaning_en": "talk",
+    "example": "話す（はなす）— 講嘢",
+    "image": "images/kanji_20_wa.png"
+  }
+]

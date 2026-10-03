@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "kanji": "体",
+    "readings": {
+      "on": "タイ・テイ",
+      "kun": "からだ"
+    },
+    "meaning_zh_hk": "身體",
+    "meaning_en": "body",
+    "example": "体（からだ）— 身體",
+    "image": "images/kanji_01_tai.png"
+  },
+  {
+    "id": 2,
+    "kanji": "頭",
+    "readings": {
+      "on": "トウ・ズ",
+      "kun": "あたま"
+    },
+    "meaning_zh_hk": "頭",
+    "meaning_en": "head",
+    "example": "頭（あたま）— 頭",
+    "image": "images/kanji_02_tou_atama.png"
+  },
+  {
+    "id": 3,
+    "kanji": "顔",
+    "readings": {
+      "on": "ガン",
+      "kun": "かお"
+    },
+    "meaning_zh_hk": "塊面",
+    "meaning_en": "face",
+    "example": "顔（かお）— 塊面",
+    "image": "images/kanji_03_gan.png"
+  },
+  {
+    "id": 4,
+    "kanji": "目",
+    "readings": {
+      "on": "モク・ボク",
+      "kun": "め"
+    },
+    "meaning_zh_hk": "眼",
+    "meaning_en": "eye",
+    "example": "目（め）— 眼",
+    "image": "images/kanji_04_moku.png"
+  },
+  {
+    "id": 5,
+    "kanji": "耳",
+    "readings": {
+      "on": "ジ",
+      "kun": "みみ"
+    },
+    "meaning_zh_hk": "耳仔",
+    "meaning_en": "ear",
+    "example": "耳（みみ）— 耳仔",
+    "image": "images/kanji_05_ji_mimi.png"
+  },
+  {
+    "id": 6,
+    "kanji": "口",
+    "readings": {
+      "on": "コウ・ク",
+      "kun": "くち"
+    },
+    "meaning_zh_hk": "口",
+    "meaning_en": "mouth",
+    "example": "口（くち）— 口",
+    "image": "images/kanji_06_kou_kuchi.png"
+  },
+  {
+    "id": 7,
+    "kanji": "手",
+    "readings": {
+      "on": "シュ",
+      "kun": "て"
+    },
+    "meaning_zh_hk": "手",
+    "meaning_en": "hand",
+    "example": "手（て）— 手",
+    "image": "images/kanji_07_shu_te.png"
+  },
+  {
+    "id": 8,
+    "kanji": "足",
+    "readings": {
+      "on": "ソク",
+      "kun": "あし・たりる"
+    },
+    "meaning_zh_hk": "腳",
+    "meaning_en": "foot / leg",
+    "example": "足（あし）— 腳",
+    "image": "images/kanji_08_soku.png"
+  },
+  {
+    "id": 9,
+    "kanji": "金",
+    "readings": {
+      "on": "キン・コン",
+      "kun": "かね"
+    },
+    "meaning_zh_hk": "錢、金",
+    "meaning_en": "money / gold",
+    "example": "お金（おかね）— 錢",
+    "image": "images/kanji_09_kin.png"
+  },
+  {
+    "id": 10,
+    "kanji": "円",
+    "readings": {
+      "on": "エン",
+      "kun": "まるい"
+    },
+    "meaning_zh_hk": "日圓",
+    "meaning_en": "yen",
+    "example": "百円（ひゃくえん）— 一百円",
+    "image": "images/kanji_10_en_maru.png"
+  },
+  {
+    "id": 11,
+    "kanji": "高",
+    "readings": {
+      "on": "コウ",
+      "kun": "たかい"
+    },
+    "meaning_zh_hk": "貴、高",
+    "meaning_en": "expensive / high",
+    "example": "高い（たかい）— 貴",
+    "image": "images/kanji_11_kou_taka.png"
+  },
+  {
+    "id": 12,
+    "kanji": "安",
+    "readings": {
+      "on": "アン",
+      "kun": "やすい"
+    },
+    "meaning_zh_hk": "平",
+    "meaning_en": "cheap",
+    "example": "安い（やすい）— 平",
+    "image": "images/kanji_12_an.png"
+  },
+  {
+    "id": 13,
+    "kanji": "品",
+    "readings": {
+      "on": "ヒン",
+      "kun": "しな"
+    },
+    "meaning_zh_hk": "貨品",
+    "meaning_en": "goods",
+    "example": "品物（しなもの）— 貨品",
+    "image": "images/kanji_13_hin.png"
+  },
+  {
+    "id": 14,
+    "kanji": "物",
+    "readings": {
+      "on": "ブツ・モツ",
+      "kun": "もの"
+    },
+    "meaning_zh_hk": "嘢",
+    "meaning_en": "thing",
+    "example": "物（もの）— 嘢",
+    "image": "images/kanji_14_butsu.png"
+  },
+  {
+    "id": 15,
+    "kanji": "値",
+    "readings": {
+      "on": "チ",
+      "kun": "ね・あたい"
+    },
+    "meaning_zh_hk": "價錢",
+    "meaning_en": "price",
+    "example": "値段（ねだん）— 價錢",
+    "image": "images/kanji_15_chi_ne.png"
+  },
+  {
+    "id": 16,
+    "kanji": "袋",
+    "readings": {
+      "on": "タイ",
+      "kun": "ふくろ"
+    },
+    "meaning_zh_hk": "袋",
+    "meaning_en": "bag",
+    "example": "袋（ふくろ）— 袋",
+    "image": "images/kanji_16_tai_fukuro.png"
+  },
+  {
+    "id": 17,
+    "kanji": "服",
+    "readings": {
+      "on": "フク",
+      "kun": "—"
+    },
+    "meaning_zh_hk": "衫",
+    "meaning_en": "clothes",
+    "example": "服（ふく）— 衫",
+    "image": "images/kanji_17_fuku.png"
+  },
+  {
+    "id": 18,
+    "kanji": "代",
+    "readings": {
+      "on": "ダイ・タイ",
+      "kun": "かわる・しろ"
+    },
+    "meaning_zh_hk": "代替、貨款",
+    "meaning_en": "fee / substitute",
+    "example": "代金（だいきん）— 貨款",
+    "image": "images/kanji_18_dai.png"
+  },
+  {
+    "id": 19,
+    "kanji": "客",
+    "readings": {
+      "on": "キャク・カク",
+      "kun": "—"
+    },
+    "meaning_zh_hk": "客人",
+    "meaning_en": "customer",
+    "example": "お客さん（おきゃくさん）— 客人",
+    "image": "images/kanji_19_kyaku.png"
+  },
+  {
+    "id": 20,
+    "kanji": "員",
+    "readings": {
+      "on": "イン",
+      "kun": "—"
+    },
+    "meaning_zh_hk": "店員、職員",
+    "meaning_en": "staff",
+    "example": "店員（てんいん）— 店員",
+    "image": "images/kanji_20_in_staff.png"
+  }
+]

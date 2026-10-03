@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "kanji": "家",
+    "readings": {
+      "on": "カ・ケ",
+      "kun": "いえ・うち"
+    },
+    "meaning_zh_hk": "屋企",
+    "meaning_en": "house / home",
+    "example": "家（いえ）— 屋企",
+    "image": "images/kanji_01_ie.png"
+  },
+  {
+    "id": 2,
+    "kanji": "室",
+    "readings": {
+      "on": "シツ",
+      "kun": "—"
+    },
+    "meaning_zh_hk": "房間",
+    "meaning_en": "room",
+    "example": "和室（わしつ）— 和室",
+    "image": "images/kanji_02_shitsu.png"
+  },
+  {
+    "id": 3,
+    "kanji": "部",
+    "readings": {
+      "on": "ブ",
+      "kun": "—"
+    },
+    "meaning_zh_hk": "部分、房間",
+    "meaning_en": "section",
+    "example": "部屋（へや）— 房間",
+    "image": "images/kanji_03_bu.png"
+  },
+  {
+    "id": 4,
+    "kanji": "屋",
+    "readings": {
+      "on": "オク",
+      "kun": "や"
+    },
+    "meaning_zh_hk": "屋頂、屋子",
+    "meaning_en": "roof / shop",
+    "example": "屋根（やね）— 屋頂",
+    "image": "images/kanji_04_oku.png"
+  },
+  {
+    "id": 5,
+    "kanji": "戸",
+    "readings": {
+      "on": "コ",
+      "kun": "と"
+    },
+    "meaning_zh_hk": "門、戶",
+    "meaning_en": "door",
+    "example": "戸（と）— 門",
+    "image": "images/kanji_05_to.png"
+  },
+  {
+    "id": 6,
+    "kanji": "窓",
+    "readings": {
+      "on": "ソウ",
+      "kun": "まど"
+    },
+    "meaning_zh_hk": "窗",
+    "meaning_en": "window",
+    "example": "窓（まど）— 窗",
+    "image": "images/kanji_06_mado.png"
+  },
+  {
+    "id": 7,
+    "kanji": "机",
+    "readings": {
+      "on": "キ",
+      "kun": "つくえ"
+    },
+    "meaning_zh_hk": "書枱",
+    "meaning_en": "desk",
+    "example": "机（つくえ）— 書枱",
+    "image": "images/kanji_07_tsukue.png"
+  },
+  {
+    "id": 8,
+    "kanji": "寝",
+    "readings": {
+      "on": "シン",
+      "kun": "ねる"
+    },
+    "meaning_zh_hk": "瞓",
+    "meaning_en": "sleep",
+    "example": "寝る（ねる）— 瞓覺",
+    "image": "images/kanji_08_shin_ne.png"
+  },
+  {
+    "id": 9,
+    "kanji": "起",
+    "readings": {
+      "on": "キ",
+      "kun": "おきる"
+    },
+    "meaning_zh_hk": "起身",
+    "meaning_en": "get up",
+    "example": "起きる（おきる）— 起身",
+    "image": "images/kanji_09_ki.png"
+  },
+  {
+    "id": 10,
+    "kanji": "洗",
+    "readings": {
+      "on": "セン",
+      "kun": "あらう"
+    },
+    "meaning_zh_hk": "洗",
+    "meaning_en": "wash",
+    "example": "洗う（あらう）— 洗",
+    "image": "images/kanji_10_sen.png"
+  },
+  {
+    "id": 11,
+    "kanji": "掃",
+    "readings": {
+      "on": "ソウ",
+      "kun": "はく"
+    },
+    "meaning_zh_hk": "掃",
+    "meaning_en": "sweep",
+    "example": "掃く（はく）— 掃",
+    "image": "images/kanji_11_sou.png"
+  },
+  {
+    "id": 12,
+    "kanji": "除",
+    "readings": {
+      "on": "ジョ・ジ",
+      "kun": "のぞく"
+    },
+    "meaning_zh_hk": "除去、打掃",
+    "meaning_en": "remove",
+    "example": "掃除（そうじ）— 打掃",
+    "image": "images/kanji_12_jo.png"
+  },
+  {
+    "id": 13,
+    "kanji": "電",
+    "readings": {
+      "on": "デン",
+      "kun": "—"
+    },
+    "meaning_zh_hk": "電",
+    "meaning_en": "electricity",
+    "example": "電気（でんき）— 電",
+    "image": "images/kanji_13_den.png"
+  },
+  {
+    "id": 14,
+    "kanji": "水",
+    "readings": {
+      "on": "スイ",
+      "kun": "みず"
+    },
+    "meaning_zh_hk": "水",
+    "meaning_en": "water",
+    "example": "水（みず）— 水",
+    "image": "images/kanji_14_sui.png"
+  },
+  {
+    "id": 15,
+    "kanji": "火",
+    "readings": {
+      "on": "カ",
+      "kun": "ひ"
+    },
+    "meaning_zh_hk": "火",
+    "meaning_en": "fire",
+    "example": "火（ひ）— 火",
+    "image": "images/kanji_15_ka.png"
+  },
+  {
+    "id": 16,
+    "kanji": "住",
+    "readings": {
+      "on": "ジュウ",
+      "kun": "すむ"
+    },
+    "meaning_zh_hk": "住",
+    "meaning_en": "live",
+    "example": "住む（すむ）— 住",
+    "image": "images/kanji_16_juu.png"
+  },
+  {
+    "id": 17,
+    "kanji": "入",
+    "readings": {
+      "on": "ニュウ",
+      "kun": "はいる・いれる"
+    },
+    "meaning_zh_hk": "入",
+    "meaning_en": "enter",
+    "example": "入る（はいる）— 入去",
+    "image": "images/kanji_17_nyuu.png"
+  },
+  {
+    "id": 18,
+    "kanji": "出",
+    "readings": {
+      "on": "シュツ",
+      "kun": "でる・だす"
+    },
+    "meaning_zh_hk": "出",
+    "meaning_en": "exit",
+    "example": "出る（でる）— 出去",
+    "image": "images/kanji_18_shutsu.png"
+  },
+  {
+    "id": 19,
+    "kanji": "鍵",
+    "readings": {
+      "on": "ケン",
+      "kun": "かぎ"
+    },
+    "meaning_zh_hk": "鎖匙",
+    "meaning_en": "key",
+    "example": "鍵（かぎ）— 鎖匙",
+    "image": "images/kanji_19_ken.png"
+  },
+  {
+    "id": 20,
+    "kanji": "席",
+    "readings": {
+      "on": "セキ",
+      "kun": "—"
+    },
+    "meaning_zh_hk": "座位",
+    "meaning_en": "seat",
+    "example": "席（せき）— 座位",
+    "image": "images/kanji_20_seki.png"
+  }
+]
